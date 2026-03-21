@@ -80,7 +80,7 @@
   "ABSTS2MOD-SOUL_MONSTER_FLAIL_KNIGHT.title": "连枷骑士",
   "ABSTS2MOD-SOUL_MONSTER_FLAIL_KNIGHT.description": "抽 [blue]1[/blue] 张牌。",
   "ABSTS2MOD-SOUL_MONSTER_FLYCONID.title": "飞蝇菌子",
-  "ABSTS2MOD-SOUL_MONSTER_FLYCONID.description": "抽 [blue]1[/blue] 张牌。",
+  "ABSTS2MOD-SOUL_MONSTER_FLYCONID.description": "施加 [blue]{VulnerablePower}[/blue] 层[gold]易伤[/gold]。每当你对一名敌人施加[gold]易伤[/gold]时，获得 [blue]{SoulMonsterFlyconidPower}[/blue] 点[gold]力量[/gold]。如果你在本回合内没有打出攻击牌，获得 [blue]{Block}[/blue] 点[gold]格挡[/gold]。",
   "ABSTS2MOD-SOUL_MONSTER_FOGMOG.title": "雾菇",
   "ABSTS2MOD-SOUL_MONSTER_FOGMOG.description": "抽 [blue]1[/blue] 张牌。",
   "ABSTS2MOD-SOUL_MONSTER_FOSSIL_STALKER.title": "化石追踪者",

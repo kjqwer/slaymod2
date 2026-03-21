@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using HarmonyLib;
+using ABStS2Mod.Cards.MonsterSouls;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Characters;
 using MegaCrit.Sts2.Core.Models.Cards;
@@ -18,7 +19,7 @@ public static class RegentStartingDeckPatch
         if (!newDeck.Any(card => card.Id == ModelDb.Card<SoulCapture>().Id))
         {
             newDeck.Add(ModelDb.Card<SoulCapture>());
-            newDeck.Add(ModelDb.Card<SoulCaptureTest>());
+            newDeck.Add(ModelDb.Card<SoulMonsterFlyconid>());
         }
         // if (!newDeck.Any(card => card.Id == ModelDb.Card<SoulCaptureTest>().Id))
         // {

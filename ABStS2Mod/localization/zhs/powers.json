@@ -1,1 +1,5 @@
-{}
+{
+  "ABSTS2MOD-SOUL_MONSTER_FLYCONID_POWER.title": "飞蝇共生",
+  "ABSTS2MOD-SOUL_MONSTER_FLYCONID_POWER.description": "每当你对一名敌人施加[gold]易伤[/gold]时，获得 [blue]2[/blue] 点[gold]力量[/gold]。",
+  "ABSTS2MOD-SOUL_MONSTER_FLYCONID_POWER.smartDescription": "每当你对一名敌人施加[gold]易伤[/gold]时，获得 [blue]{Amount}[/blue] 点[gold]力量[/gold]。"
+}

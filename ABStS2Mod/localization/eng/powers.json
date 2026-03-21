@@ -1,1 +1,5 @@
-{}
+{
+  "ABSTS2MOD-SOUL_MONSTER_FLYCONID_POWER.title": "Flyconid Symbiosis",
+  "ABSTS2MOD-SOUL_MONSTER_FLYCONID_POWER.description": "Whenever you apply [gold]Vulnerable[/gold] to an enemy, gain [blue]2[/blue] [gold]Strength[/gold].",
+  "ABSTS2MOD-SOUL_MONSTER_FLYCONID_POWER.smartDescription": "Whenever you apply [gold]Vulnerable[/gold] to an enemy, gain [blue]{Amount}[/blue] [gold]Strength[/gold]."
+}

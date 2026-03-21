@@ -80,7 +80,7 @@
   "ABSTS2MOD-SOUL_MONSTER_FLAIL_KNIGHT.title": "Flail Knight",
   "ABSTS2MOD-SOUL_MONSTER_FLAIL_KNIGHT.description": "Draw [blue]1[/blue] card.",
   "ABSTS2MOD-SOUL_MONSTER_FLYCONID.title": "Flyconid",
-  "ABSTS2MOD-SOUL_MONSTER_FLYCONID.description": "Draw [blue]1[/blue] card.",
+  "ABSTS2MOD-SOUL_MONSTER_FLYCONID.description": "Apply [blue]{VulnerablePower}[/blue] [gold]Vulnerable[/gold]. Whenever you apply [gold]Vulnerable[/gold] to an enemy, gain [blue]{SoulMonsterFlyconidPower}[/blue] [gold]Strength[/gold]. If you have not played an Attack this turn, gain [blue]{Block}[/blue] [gold]Block[/gold].",
   "ABSTS2MOD-SOUL_MONSTER_FOGMOG.title": "Fogmog",
   "ABSTS2MOD-SOUL_MONSTER_FOGMOG.description": "Draw [blue]1[/blue] card.",
   "ABSTS2MOD-SOUL_MONSTER_FOSSIL_STALKER.title": "Fossil Stalker",
