@@ -8,6 +8,7 @@ temp/
 publish/
 Properties/
 packages/
+tools/
 .editorconfig
 *cs.uid
 *.user

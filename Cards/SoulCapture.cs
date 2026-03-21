@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
+using ABStS2Mod.Cards.MonsterSouls;
 using BaseLib.Abstracts;
 using BaseLib.Utils;
 using Godot;
@@ -46,7 +48,7 @@ public sealed class SoulCapture() : CustomCardModel(2, CardType.Attack, CardRari
         bool wasTargetDefeated = target.IsDead || attack.Results.Any((DamageResult result) => result.WasTargetKilled);
         if (wasTargetDefeated)
         {
-            await RemoveDeckVersionAndAddRewardCard(choiceContext);
+            await RemoveDeckVersionAndAddRewardCard(choiceContext, target.ModelId.Entry);
         }
     }
 
@@ -56,7 +58,7 @@ public sealed class SoulCapture() : CustomCardModel(2, CardType.Attack, CardRari
         AddKeyword(CardKeyword.Retain);
     }
 
-    private async Task RemoveDeckVersionAndAddRewardCard(PlayerChoiceContext choiceContext)
+    private async Task RemoveDeckVersionAndAddRewardCard(PlayerChoiceContext choiceContext, string defeatedMonsterId)
     {
         Player? owner = Owner;
         if (owner == null)
@@ -84,26 +86,37 @@ public sealed class SoulCapture() : CustomCardModel(2, CardType.Attack, CardRari
 
         if (combatRoom != null)
         {
-            CardCreationOptions options = new CardCreationOptions(
-                new CardPoolModel[] { ModelDb.CardPool<SoulCaptureRewardPool>() },
+            CardModel rewardCard = MonsterSoulCardRegistry.Create(owner, defeatedMonsterId);
+            if (IsUpgraded && rewardCard.IsUpgradable)
+            {
+                CardCmd.Upgrade(rewardCard, CardPreviewStyle.None);
+            }
+            CardCreationOptions rewardOptions = new CardCreationOptions(
+                new CardPoolModel[] { ModelDb.CardPool<ColorlessCardPool>() },
                 CardCreationSource.Other,
                 CardRarityOddsType.Uniform);
-            CardReward reward = new CardReward(options, 1, owner);
-            if (IsUpgraded)
-            {
-                reward.AfterGenerated += delegate
-                {
-                    foreach (CardModel card in reward.Cards)
-                    {
-                        if (card.IsUpgradable)
-                        {
-                            CardCmd.Upgrade(card, CardPreviewStyle.None);
-                        }
-                    }
-                };
-            }
+            CardReward reward = new CardReward(rewardOptions, 1, owner);
+            ForceSingleRewardCard(reward, rewardCard);
             combatRoom.AddExtraReward(owner, reward);
         }
+    }
+
+    private static void ForceSingleRewardCard(CardReward reward, CardModel rewardCard)
+    {
+        FieldInfo? cardsField = typeof(CardReward).GetField("_cards", BindingFlags.Instance | BindingFlags.NonPublic);
+        FieldInfo? manualField = typeof(CardReward).GetField("_cardsWereManuallySet", BindingFlags.Instance | BindingFlags.NonPublic);
+        if (cardsField == null || manualField == null)
+        {
+            return;
+        }
+        List<CardCreationResult>? cards = cardsField.GetValue(reward) as List<CardCreationResult>;
+        if (cards == null)
+        {
+            return;
+        }
+        cards.Clear();
+        cards.Add(new CardCreationResult(rewardCard));
+        manualField.SetValue(reward, true);
     }
 }
 

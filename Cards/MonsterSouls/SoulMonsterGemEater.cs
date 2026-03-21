@@ -8,10 +8,10 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.CardPools;
 
-namespace ABStS2Mod.Cards;
+namespace ABStS2Mod.Cards.MonsterSouls;
 
 [Pool(typeof(ColorlessCardPool))]
-public sealed class SoulCaptureTest() : CustomCardModel(0, CardType.Skill, CardRarity.Event, TargetType.Self)
+public sealed class SoulMonsterGemEater() : CustomCardModel(0, CardType.Skill, CardRarity.Event, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] { new CardsVar(1) };
 
