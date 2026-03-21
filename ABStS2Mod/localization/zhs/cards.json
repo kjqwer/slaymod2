@@ -30,7 +30,7 @@
   "ABSTS2MOD-SOUL_MONSTER_BOWLBUG_SILK.title": "盛碗虫（丝）",
   "ABSTS2MOD-SOUL_MONSTER_BOWLBUG_SILK.description": "抽 [blue]1[/blue] 张牌。",
   "ABSTS2MOD-SOUL_MONSTER_BRUTE_RUBY_RAIDER.title": "劫掠者暴徒",
-  "ABSTS2MOD-SOUL_MONSTER_BRUTE_RUBY_RAIDER.description": "抽 [blue]1[/blue] 张牌。",
+  "ABSTS2MOD-SOUL_MONSTER_BRUTE_RUBY_RAIDER.description": "造成 [blue]{Damage}[/blue] 点伤害。你每有一张[gold]状态[/gold]牌在[gold]手牌[/gold]中，此伤害增加 [blue]{CalculationExtra}[/blue] 点。若此攻击造成伤害，抽 [blue]{Cards}[/blue] 张牌。",
   "ABSTS2MOD-SOUL_MONSTER_BYGONE_EFFIGY.title": "旧日雕像",
   "ABSTS2MOD-SOUL_MONSTER_BYGONE_EFFIGY.description": "抽 [blue]1[/blue] 张牌。",
   "ABSTS2MOD-SOUL_MONSTER_BYRDONIS.title": "多尼斯异鸟",

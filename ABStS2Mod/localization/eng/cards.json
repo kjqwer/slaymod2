@@ -30,7 +30,7 @@
   "ABSTS2MOD-SOUL_MONSTER_BOWLBUG_SILK.title": "Bowlbug (Silk)",
   "ABSTS2MOD-SOUL_MONSTER_BOWLBUG_SILK.description": "Draw [blue]1[/blue] card.",
   "ABSTS2MOD-SOUL_MONSTER_BRUTE_RUBY_RAIDER.title": "Brute Raider",
-  "ABSTS2MOD-SOUL_MONSTER_BRUTE_RUBY_RAIDER.description": "Draw [blue]1[/blue] card.",
+  "ABSTS2MOD-SOUL_MONSTER_BRUTE_RUBY_RAIDER.description": "Deal [blue]{Damage}[/blue] damage. For each [gold]Status[/gold] card in your hand, increase this damage by [blue]{CalculationExtra}[/blue]. If this attack deals damage, draw [blue]{Cards}[/blue] card.",
   "ABSTS2MOD-SOUL_MONSTER_BYGONE_EFFIGY.title": "Bygone Effigy",
   "ABSTS2MOD-SOUL_MONSTER_BYGONE_EFFIGY.description": "Draw [blue]1[/blue] card.",
   "ABSTS2MOD-SOUL_MONSTER_BYRDONIS.title": "Byrdonis",
