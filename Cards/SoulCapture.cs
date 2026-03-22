@@ -86,22 +86,27 @@ public sealed class SoulCapture() : CustomCardModel(2, CardType.Attack, CardRari
 
         if (combatRoom != null)
         {
-            CardModel rewardCard = MonsterSoulCardRegistry.Create(owner, defeatedMonsterId);
-            if (IsUpgraded && rewardCard.IsUpgradable)
+            CardModel monsterRewardCard = MonsterSoulCardRegistry.Create(owner, defeatedMonsterId);
+            CardModel soulCaptureRewardCard = owner.RunState.CreateCard<SoulCapture>(owner);
+            if (IsUpgraded && monsterRewardCard.IsUpgradable)
             {
-                CardCmd.Upgrade(rewardCard, CardPreviewStyle.None);
+                CardCmd.Upgrade(monsterRewardCard, CardPreviewStyle.None);
+            }
+            if (IsUpgraded && soulCaptureRewardCard.IsUpgradable)
+            {
+                CardCmd.Upgrade(soulCaptureRewardCard, CardPreviewStyle.None);
             }
             CardCreationOptions rewardOptions = new CardCreationOptions(
                 new CardPoolModel[] { ModelDb.CardPool<ColorlessCardPool>() },
                 CardCreationSource.Other,
                 CardRarityOddsType.Uniform);
-            CardReward reward = new CardReward(rewardOptions, 1, owner);
-            ForceSingleRewardCard(reward, rewardCard);
+            CardReward reward = new CardReward(rewardOptions, 2, owner);
+            ForceRewardCards(reward, monsterRewardCard, soulCaptureRewardCard);
             combatRoom.AddExtraReward(owner, reward);
         }
     }
 
-    private static void ForceSingleRewardCard(CardReward reward, CardModel rewardCard)
+    private static void ForceRewardCards(CardReward reward, params CardModel[] rewardCards)
     {
         FieldInfo? cardsField = typeof(CardReward).GetField("_cards", BindingFlags.Instance | BindingFlags.NonPublic);
         FieldInfo? manualField = typeof(CardReward).GetField("_cardsWereManuallySet", BindingFlags.Instance | BindingFlags.NonPublic);
@@ -115,7 +120,10 @@ public sealed class SoulCapture() : CustomCardModel(2, CardType.Attack, CardRari
             return;
         }
         cards.Clear();
-        cards.Add(new CardCreationResult(rewardCard));
+        foreach (CardModel rewardCard in rewardCards)
+        {
+            cards.Add(new CardCreationResult(rewardCard));
+        }
         manualField.SetValue(reward, true);
     }
 }

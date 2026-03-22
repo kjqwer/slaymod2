@@ -16,5 +16,8 @@
   "ABSTS2MOD-SOUL_MONSTER_FUZZY_WURM_CRAWLER_POWER.smartDescription": "在你的下回合开始时，将 [blue]{Amount}[/blue] 张[gold]地洞突袭[/gold]加入手牌。",
   "ABSTS2MOD-SOUL_MONSTER_FUZZY_WURM_CRAWLER_PLUS_POWER.title": "地洞潜伏+",
   "ABSTS2MOD-SOUL_MONSTER_FUZZY_WURM_CRAWLER_PLUS_POWER.description": "在你的下回合开始时，将 [blue]1[/blue] 张[gold]地洞突袭+[/gold]加入手牌。",
-  "ABSTS2MOD-SOUL_MONSTER_FUZZY_WURM_CRAWLER_PLUS_POWER.smartDescription": "在你的下回合开始时，将 [blue]{Amount}[/blue] 张[gold]地洞突袭+[/gold]加入手牌。"
+  "ABSTS2MOD-SOUL_MONSTER_FUZZY_WURM_CRAWLER_PLUS_POWER.smartDescription": "在你的下回合开始时，将 [blue]{Amount}[/blue] 张[gold]地洞突袭+[/gold]加入手牌。",
+  "ABSTS2MOD-SOUL_MONSTER_VINE_SHAMBLER_POWER.title": "藤蔓激涌",
+  "ABSTS2MOD-SOUL_MONSTER_VINE_SHAMBLER_POWER.description": "本回合内，你的攻击牌能量消耗减少 [blue]1[/blue]。",
+  "ABSTS2MOD-SOUL_MONSTER_VINE_SHAMBLER_POWER.smartDescription": "本回合内，你的攻击牌能量消耗减少 [blue]{Amount}[/blue]。"
 }
