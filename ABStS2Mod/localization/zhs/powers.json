@@ -22,5 +22,17 @@
   "ABSTS2MOD-SOUL_MONSTER_VINE_SHAMBLER_POWER.smartDescription": "本回合内，你的攻击牌能量消耗减少 [blue]{Amount}[/blue]。",
   "ABSTS2MOD-SOUL_MONSTER_BYGONE_EFFIGY_DISCARD_POWER.title": "旧日负担",
   "ABSTS2MOD-SOUL_MONSTER_BYGONE_EFFIGY_DISCARD_POWER.description": "在你的下回合开始时，丢弃 [blue]1[/blue] 张牌。",
-  "ABSTS2MOD-SOUL_MONSTER_BYGONE_EFFIGY_DISCARD_POWER.smartDescription": "在你的下回合开始时，丢弃 [blue]{Amount}[/blue] 张牌。"
+  "ABSTS2MOD-SOUL_MONSTER_BYGONE_EFFIGY_DISCARD_POWER.smartDescription": "在你的下回合开始时，丢弃 [blue]{Amount}[/blue] 张牌。",
+  "ABSTS2MOD-SOUL_MONSTER_LIVING_FOG_POWER.title": "活雾",
+  "ABSTS2MOD-SOUL_MONSTER_LIVING_FOG_POWER.description": "在你的回合开始时，将 [blue]1[/blue] 张随机技能牌加入手牌。",
+  "ABSTS2MOD-SOUL_MONSTER_LIVING_FOG_POWER.smartDescription": "在你的回合开始时，将 [blue]{Amount}[/blue] 张随机技能牌加入手牌。",
+  "ABSTS2MOD-SOUL_MONSTER_LIVING_FOG_PLUS_POWER.title": "活雾+",
+  "ABSTS2MOD-SOUL_MONSTER_LIVING_FOG_PLUS_POWER.description": "在你的回合开始时，将 [blue]1[/blue] 张随机[gold]升级[/gold]技能牌加入手牌。",
+  "ABSTS2MOD-SOUL_MONSTER_LIVING_FOG_PLUS_POWER.smartDescription": "在你的回合开始时，将 [blue]{Amount}[/blue] 张随机[gold]升级[/gold]技能牌加入手牌。",
+  "ABSTS2MOD-SOUL_MONSTER_SEWER_CLAM_POWER.title": "坚壳",
+  "ABSTS2MOD-SOUL_MONSTER_SEWER_CLAM_POWER.description": "在你的回合开始时，获得 [blue]10[/blue] 点[gold]格挡[/gold]。",
+  "ABSTS2MOD-SOUL_MONSTER_SEWER_CLAM_POWER.smartDescription": "在你的回合开始时，获得 [blue]{Amount}[/blue] 点[gold]格挡[/gold]。",
+  "ABSTS2MOD-SOUL_MONSTER_FOSSIL_STALKER_POWER.title": "吮吸",
+  "ABSTS2MOD-SOUL_MONSTER_FOSSIL_STALKER_POWER.description": "每次你造成未被格挡的伤害时，获得 [blue]1[/blue] 点[gold]力量[/gold]。",
+  "ABSTS2MOD-SOUL_MONSTER_FOSSIL_STALKER_POWER.smartDescription": "每次你造成未被格挡的伤害时，获得 [blue]{Amount}[/blue] 点[gold]力量[/gold]。"
 }

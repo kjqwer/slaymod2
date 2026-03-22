@@ -22,5 +22,17 @@
   "ABSTS2MOD-SOUL_MONSTER_VINE_SHAMBLER_POWER.smartDescription": "This turn, your Attack cards cost [blue]{Amount}[/blue] less Energy.",
   "ABSTS2MOD-SOUL_MONSTER_BYGONE_EFFIGY_DISCARD_POWER.title": "Ancient Burden",
   "ABSTS2MOD-SOUL_MONSTER_BYGONE_EFFIGY_DISCARD_POWER.description": "At the start of your next turn, discard [blue]1[/blue] card.",
-  "ABSTS2MOD-SOUL_MONSTER_BYGONE_EFFIGY_DISCARD_POWER.smartDescription": "At the start of your next turn, discard [blue]{Amount}[/blue] cards."
+  "ABSTS2MOD-SOUL_MONSTER_BYGONE_EFFIGY_DISCARD_POWER.smartDescription": "At the start of your next turn, discard [blue]{Amount}[/blue] cards.",
+  "ABSTS2MOD-SOUL_MONSTER_LIVING_FOG_POWER.title": "Living Fog",
+  "ABSTS2MOD-SOUL_MONSTER_LIVING_FOG_POWER.description": "At the start of your turn, add [blue]1[/blue] random Skill to your hand.",
+  "ABSTS2MOD-SOUL_MONSTER_LIVING_FOG_POWER.smartDescription": "At the start of your turn, add [blue]{Amount}[/blue] random Skills to your hand.",
+  "ABSTS2MOD-SOUL_MONSTER_LIVING_FOG_PLUS_POWER.title": "Living Fog+",
+  "ABSTS2MOD-SOUL_MONSTER_LIVING_FOG_PLUS_POWER.description": "At the start of your turn, add [blue]1[/blue] random [gold]upgraded[/gold] Skill to your hand.",
+  "ABSTS2MOD-SOUL_MONSTER_LIVING_FOG_PLUS_POWER.smartDescription": "At the start of your turn, add [blue]{Amount}[/blue] random [gold]upgraded[/gold] Skills to your hand.",
+  "ABSTS2MOD-SOUL_MONSTER_SEWER_CLAM_POWER.title": "Hard Shell",
+  "ABSTS2MOD-SOUL_MONSTER_SEWER_CLAM_POWER.description": "At the start of your turn, gain [blue]10[/blue] [gold]Block[/gold].",
+  "ABSTS2MOD-SOUL_MONSTER_SEWER_CLAM_POWER.smartDescription": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Block[/gold].",
+  "ABSTS2MOD-SOUL_MONSTER_FOSSIL_STALKER_POWER.title": "Suck",
+  "ABSTS2MOD-SOUL_MONSTER_FOSSIL_STALKER_POWER.description": "Whenever you deal unblocked attack damage, gain [blue]1[/blue] [gold]Strength[/gold].",
+  "ABSTS2MOD-SOUL_MONSTER_FOSSIL_STALKER_POWER.smartDescription": "Whenever you deal unblocked attack damage, gain [blue]{Amount}[/blue] [gold]Strength[/gold]."
 }

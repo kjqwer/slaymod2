@@ -13,10 +13,20 @@ namespace ABStS2Mod.Cards.MonsterSouls;
 [Pool(typeof(ColorlessCardPool))]
 public sealed class SoulMonsterSneakyGremlin() : CustomCardModel(0, CardType.Skill, CardRarity.Event, TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] { new CardsVar(1) };
+    public override IEnumerable<CardKeyword> CanonicalKeywords => new CardKeyword[] { CardKeyword.Exhaust };
+
+    protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
+    {
+        new DynamicVar("Gold", 20m)
+    };
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        await CardPileCmd.Draw(choiceContext, DynamicVars.Cards.BaseValue, Owner);
+        await PlayerCmd.GainGold(DynamicVars["Gold"].IntValue, Owner);
+    }
+
+    protected override void OnUpgrade()
+    {
+        DynamicVars["Gold"].UpgradeValueBy(10m);
     }
 }
