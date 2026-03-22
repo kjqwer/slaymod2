@@ -21,13 +21,13 @@ public sealed class SoulMonsterHauntedShip() : CustomCardModel(1, CardType.Attac
     {
         new DamageVar(10m, ValueProp.Move),
         new PowerVar<VulnerablePower>(2m),
-        new PowerVar<FrailPower>(2m)
+        new PowerVar<WeakPower>(2m)
     };
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
     {
         HoverTipFactory.FromPower<VulnerablePower>(),
-        HoverTipFactory.FromPower<FrailPower>()
+        HoverTipFactory.FromPower<WeakPower>()
     };
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
@@ -39,13 +39,13 @@ public sealed class SoulMonsterHauntedShip() : CustomCardModel(1, CardType.Attac
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
         await PowerCmd.Apply<VulnerablePower>(cardPlay.Target, DynamicVars.Vulnerable.BaseValue, Owner.Creature, this);
-        await PowerCmd.Apply<FrailPower>(cardPlay.Target, DynamicVars["FrailPower"].BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<WeakPower>(cardPlay.Target, DynamicVars.Weak.BaseValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()
     {
         DynamicVars.Damage.UpgradeValueBy(2m);
         DynamicVars.Vulnerable.UpgradeValueBy(1m);
-        DynamicVars["FrailPower"].UpgradeValueBy(1m);
+        DynamicVars.Weak.UpgradeValueBy(1m);
     }
 }

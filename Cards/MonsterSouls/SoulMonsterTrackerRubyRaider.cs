@@ -43,19 +43,12 @@ public sealed class SoulMonsterTrackerRubyRaider() : CustomCardModel(1, CardType
 
         if (IsUpgraded || hasVulnerable)
         {
-            for (int i = 0; i < DynamicVars["Times"].IntValue; i++)
-            {
-                if (!target.IsAlive)
-                {
-                    break;
-                }
-
-                await DamageCmd.Attack(DynamicVars.Damage.BaseValue)
-                    .FromCard(this)
-                    .Targeting(target)
-                    .WithHitFx("vfx/vfx_attack_blunt", null, "blunt_attack.mp3")
-                    .Execute(choiceContext);
-            }
+            await DamageCmd.Attack(DynamicVars.Damage.BaseValue)
+                .WithHitCount(DynamicVars["Times"].IntValue)
+                .FromCard(this)
+                .Targeting(target)
+                .WithHitFx("vfx/vfx_attack_blunt", null, "blunt_attack.mp3")
+                .Execute(choiceContext);
         }
     }
 }

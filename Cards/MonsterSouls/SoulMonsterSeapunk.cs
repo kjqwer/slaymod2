@@ -25,19 +25,12 @@ public sealed class SoulMonsterSeapunk() : CustomCardModel(1, CardType.Attack, C
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         ArgumentNullException.ThrowIfNull(cardPlay.Target);
-        for (int i = 0; i < DynamicVars["Times"].IntValue; i++)
-        {
-            if (!cardPlay.Target.IsAlive)
-            {
-                break;
-            }
-
-            await DamageCmd.Attack(DynamicVars.Damage.BaseValue)
-                .FromCard(this)
-                .Targeting(cardPlay.Target)
-                .WithHitFx("vfx/vfx_attack_blunt")
-                .Execute(choiceContext);
-        }
+        await DamageCmd.Attack(DynamicVars.Damage.BaseValue)
+            .WithHitCount(DynamicVars["Times"].IntValue)
+            .FromCard(this)
+            .Targeting(cardPlay.Target)
+            .WithHitFx("vfx/vfx_attack_blunt")
+            .Execute(choiceContext);
 
         await CardPileCmd.Draw(choiceContext, DynamicVars.Cards.BaseValue, Owner);
     }

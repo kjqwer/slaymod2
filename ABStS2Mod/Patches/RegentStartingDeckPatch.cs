@@ -13,12 +13,25 @@ namespace ABStS2Mod.Patches;
 [HarmonyPatch(typeof(Regent), nameof(Regent.StartingDeck), MethodType.Getter)]
 public static class RegentStartingDeckPatch
 {
+    private const string RegentStrikeId = "STRIKE_REGENT";
+
     public static void Postfix(ref IEnumerable<CardModel> __result)
     {
         var newDeck = new List<CardModel>(__result);
         if (!newDeck.Any(card => card.Id == ModelDb.Card<SoulCapture>().Id))
         {
             newDeck.Add(ModelDb.Card<SoulCapture>());
+            newDeck.Add(ModelDb.Card<SoulCapture>());
+            for (int i = 0; i < 2; i++)
+            {
+                int strikeIndex = newDeck.FindIndex(card => card.Id.Entry == RegentStrikeId);
+                if (strikeIndex < 0)
+                {
+                    break;
+                }
+
+                newDeck.RemoveAt(strikeIndex);
+            }
             // newDeck.Add(ModelDb.Card<SoulMonsterPunchConstruct>());
         }
         // if (!newDeck.Any(card => card.Id == ModelDb.Card<SoulCaptureTest>().Id))
