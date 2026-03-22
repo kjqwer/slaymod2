@@ -7,16 +7,29 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.CardPools;
+using MegaCrit.Sts2.Core.ValueProps;
 
 namespace ABStS2Mod.Cards.MonsterSouls;
 
 [Pool(typeof(ColorlessCardPool))]
-public sealed class SoulMonsterLeafSlimeM() : CustomCardModel(0, CardType.Skill, CardRarity.Event, TargetType.Self)
+public sealed class SoulMonsterLeafSlimeM() : CustomCardModel(1, CardType.Skill, CardRarity.Event, TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] { new CardsVar(1) };
+    public override bool GainsBlock => true;
+
+    protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
+    {
+        new BlockVar(10m, ValueProp.Move),
+        new DynamicVar("Increase", 3m)
+    };
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        await CardPileCmd.Draw(choiceContext, DynamicVars.Cards.BaseValue, Owner);
+        await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, cardPlay);
+        DynamicVars.Block.BaseValue += DynamicVars["Increase"].BaseValue;
+    }
+
+    protected override void OnUpgrade()
+    {
+        DynamicVars["Increase"].UpgradeValueBy(2m);
     }
 }
