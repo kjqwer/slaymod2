@@ -7,5 +7,8 @@
   "ABSTS2MOD-SOUL_MONSTER_ASSASSIN_RUBY_RAIDER_STEALTH_POWER.smartDescription": "The next time you are attacked, reduce damage by 100%.",
   "ABSTS2MOD-SOUL_MONSTER_ASSASSIN_RUBY_RAIDER_AMBUSH_POWER.title": "Ambush",
   "ABSTS2MOD-SOUL_MONSTER_ASSASSIN_RUBY_RAIDER_AMBUSH_POWER.description": "Your next Attack card deals [blue]2[/blue]x damage.",
-  "ABSTS2MOD-SOUL_MONSTER_ASSASSIN_RUBY_RAIDER_AMBUSH_POWER.smartDescription": "Your next Attack card deals [blue]{Amount}[/blue]x damage."
+  "ABSTS2MOD-SOUL_MONSTER_ASSASSIN_RUBY_RAIDER_AMBUSH_POWER.smartDescription": "Your next Attack card deals [blue]{Amount}[/blue]x damage.",
+  "ABSTS2MOD-SOUL_MONSTER_FOGMOG_POWER.title": "Fog Erosion",
+  "ABSTS2MOD-SOUL_MONSTER_FOGMOG_POWER.description": "Whenever you play a Skill card, apply [blue]1[/blue] [gold]Vulnerable[/gold] and [gold]Weak[/gold] to all enemies.",
+  "ABSTS2MOD-SOUL_MONSTER_FOGMOG_POWER.smartDescription": "Whenever you play a Skill card, apply [blue]{Amount}[/blue] [gold]Vulnerable[/gold] and [gold]Weak[/gold] to all enemies."
 }

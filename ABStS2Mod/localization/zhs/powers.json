@@ -7,5 +7,8 @@
   "ABSTS2MOD-SOUL_MONSTER_ASSASSIN_RUBY_RAIDER_STEALTH_POWER.smartDescription": "下一次受到攻击时，伤害降低100%。",
   "ABSTS2MOD-SOUL_MONSTER_ASSASSIN_RUBY_RAIDER_AMBUSH_POWER.title": "伏击",
   "ABSTS2MOD-SOUL_MONSTER_ASSASSIN_RUBY_RAIDER_AMBUSH_POWER.description": "下一次你打出的攻击牌将造成 [blue]2[/blue] 倍伤害。",
-  "ABSTS2MOD-SOUL_MONSTER_ASSASSIN_RUBY_RAIDER_AMBUSH_POWER.smartDescription": "下一次你打出的攻击牌将造成 [blue]{Amount}[/blue] 倍伤害。"
+  "ABSTS2MOD-SOUL_MONSTER_ASSASSIN_RUBY_RAIDER_AMBUSH_POWER.smartDescription": "下一次你打出的攻击牌将造成 [blue]{Amount}[/blue] 倍伤害。",
+  "ABSTS2MOD-SOUL_MONSTER_FOGMOG_POWER.title": "雾蚀",
+  "ABSTS2MOD-SOUL_MONSTER_FOGMOG_POWER.description": "每当你打出一张技能牌，对所有敌人施加 [blue]1[/blue] 层[gold]易伤[/gold]与[gold]虚弱[/gold]。",
+  "ABSTS2MOD-SOUL_MONSTER_FOGMOG_POWER.smartDescription": "每当你打出一张技能牌，对所有敌人施加 [blue]{Amount}[/blue] 层[gold]易伤[/gold]与[gold]虚弱[/gold]。"
 }
