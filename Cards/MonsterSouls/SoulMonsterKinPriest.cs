@@ -21,12 +21,13 @@ public sealed class SoulMonsterKinPriest() : CustomCardModel(1, CardType.Attack,
     {
         new DamageVar(8m, ValueProp.Move),
         new PowerVar<WeakPower>(1m),
-        new IntVar("WeakExtra", 1m)
+        new PowerVar<VulnerablePower>(1m)
     };
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
     {
-        HoverTipFactory.FromPower<WeakPower>()
+        HoverTipFactory.FromPower<WeakPower>(),
+        HoverTipFactory.FromPower<VulnerablePower>()
     };
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
@@ -38,13 +39,13 @@ public sealed class SoulMonsterKinPriest() : CustomCardModel(1, CardType.Attack,
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
         await PowerCmd.Apply<WeakPower>(cardPlay.Target, DynamicVars.Weak.BaseValue, Owner.Creature, this);
-        await PowerCmd.Apply<WeakPower>(cardPlay.Target, DynamicVars["WeakExtra"].BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<VulnerablePower>(cardPlay.Target, DynamicVars.Vulnerable.BaseValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()
     {
         DynamicVars.Damage.UpgradeValueBy(4m);
         DynamicVars.Weak.UpgradeValueBy(1m);
-        DynamicVars["WeakExtra"].UpgradeValueBy(1m);
+        DynamicVars.Vulnerable.UpgradeValueBy(1m);
     }
 }
