@@ -19,5 +19,8 @@
   "ABSTS2MOD-SOUL_MONSTER_FUZZY_WURM_CRAWLER_PLUS_POWER.smartDescription": "At the start of your next turn, add [blue]{Amount}[/blue] [gold]Burrow Raid+[/gold] to your hand.",
   "ABSTS2MOD-SOUL_MONSTER_VINE_SHAMBLER_POWER.title": "Vine Surge",
   "ABSTS2MOD-SOUL_MONSTER_VINE_SHAMBLER_POWER.description": "This turn, your Attack cards cost [blue]1[/blue] less Energy.",
-  "ABSTS2MOD-SOUL_MONSTER_VINE_SHAMBLER_POWER.smartDescription": "This turn, your Attack cards cost [blue]{Amount}[/blue] less Energy."
+  "ABSTS2MOD-SOUL_MONSTER_VINE_SHAMBLER_POWER.smartDescription": "This turn, your Attack cards cost [blue]{Amount}[/blue] less Energy.",
+  "ABSTS2MOD-SOUL_MONSTER_BYGONE_EFFIGY_DISCARD_POWER.title": "Ancient Burden",
+  "ABSTS2MOD-SOUL_MONSTER_BYGONE_EFFIGY_DISCARD_POWER.description": "At the start of your next turn, discard [blue]1[/blue] card.",
+  "ABSTS2MOD-SOUL_MONSTER_BYGONE_EFFIGY_DISCARD_POWER.smartDescription": "At the start of your next turn, discard [blue]{Amount}[/blue] cards."
 }
