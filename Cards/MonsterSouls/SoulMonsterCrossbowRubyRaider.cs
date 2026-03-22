@@ -27,6 +27,7 @@ public sealed class SoulMonsterCrossbowRubyRaider() : CustomCardModel(1, CardTyp
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         ArgumentNullException.ThrowIfNull(cardPlay.Target);
+        ArgumentNullException.ThrowIfNull(CombatState);
 
         Creature target = cardPlay.Target;
         int extraHits = CombatState.HittableEnemies.Count(enemy => enemy != target);

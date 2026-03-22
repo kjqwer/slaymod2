@@ -10,5 +10,11 @@
   "ABSTS2MOD-SOUL_MONSTER_ASSASSIN_RUBY_RAIDER_AMBUSH_POWER.smartDescription": "下一次你打出的攻击牌将造成 [blue]{Amount}[/blue] 倍伤害。",
   "ABSTS2MOD-SOUL_MONSTER_FOGMOG_POWER.title": "雾蚀",
   "ABSTS2MOD-SOUL_MONSTER_FOGMOG_POWER.description": "每当你打出一张技能牌，对所有敌人施加 [blue]1[/blue] 层[gold]易伤[/gold]与[gold]虚弱[/gold]。",
-  "ABSTS2MOD-SOUL_MONSTER_FOGMOG_POWER.smartDescription": "每当你打出一张技能牌，对所有敌人施加 [blue]{Amount}[/blue] 层[gold]易伤[/gold]与[gold]虚弱[/gold]。"
+  "ABSTS2MOD-SOUL_MONSTER_FOGMOG_POWER.smartDescription": "每当你打出一张技能牌，对所有敌人施加 [blue]{Amount}[/blue] 层[gold]易伤[/gold]与[gold]虚弱[/gold]。",
+  "ABSTS2MOD-SOUL_MONSTER_FUZZY_WURM_CRAWLER_POWER.title": "地洞潜伏",
+  "ABSTS2MOD-SOUL_MONSTER_FUZZY_WURM_CRAWLER_POWER.description": "在你的下回合开始时，将 [blue]1[/blue] 张[gold]地洞突袭[/gold]加入手牌。",
+  "ABSTS2MOD-SOUL_MONSTER_FUZZY_WURM_CRAWLER_POWER.smartDescription": "在你的下回合开始时，将 [blue]{Amount}[/blue] 张[gold]地洞突袭[/gold]加入手牌。",
+  "ABSTS2MOD-SOUL_MONSTER_FUZZY_WURM_CRAWLER_PLUS_POWER.title": "地洞潜伏+",
+  "ABSTS2MOD-SOUL_MONSTER_FUZZY_WURM_CRAWLER_PLUS_POWER.description": "在你的下回合开始时，将 [blue]1[/blue] 张[gold]地洞突袭+[/gold]加入手牌。",
+  "ABSTS2MOD-SOUL_MONSTER_FUZZY_WURM_CRAWLER_PLUS_POWER.smartDescription": "在你的下回合开始时，将 [blue]{Amount}[/blue] 张[gold]地洞突袭+[/gold]加入手牌。"
 }

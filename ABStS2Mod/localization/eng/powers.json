@@ -10,5 +10,11 @@
   "ABSTS2MOD-SOUL_MONSTER_ASSASSIN_RUBY_RAIDER_AMBUSH_POWER.smartDescription": "Your next Attack card deals [blue]{Amount}[/blue]x damage.",
   "ABSTS2MOD-SOUL_MONSTER_FOGMOG_POWER.title": "Fog Erosion",
   "ABSTS2MOD-SOUL_MONSTER_FOGMOG_POWER.description": "Whenever you play a Skill card, apply [blue]1[/blue] [gold]Vulnerable[/gold] and [gold]Weak[/gold] to all enemies.",
-  "ABSTS2MOD-SOUL_MONSTER_FOGMOG_POWER.smartDescription": "Whenever you play a Skill card, apply [blue]{Amount}[/blue] [gold]Vulnerable[/gold] and [gold]Weak[/gold] to all enemies."
+  "ABSTS2MOD-SOUL_MONSTER_FOGMOG_POWER.smartDescription": "Whenever you play a Skill card, apply [blue]{Amount}[/blue] [gold]Vulnerable[/gold] and [gold]Weak[/gold] to all enemies.",
+  "ABSTS2MOD-SOUL_MONSTER_FUZZY_WURM_CRAWLER_POWER.title": "Burrow Setup",
+  "ABSTS2MOD-SOUL_MONSTER_FUZZY_WURM_CRAWLER_POWER.description": "At the start of your next turn, add [blue]1[/blue] [gold]Burrow Raid[/gold] to your hand.",
+  "ABSTS2MOD-SOUL_MONSTER_FUZZY_WURM_CRAWLER_POWER.smartDescription": "At the start of your next turn, add [blue]{Amount}[/blue] [gold]Burrow Raid[/gold] to your hand.",
+  "ABSTS2MOD-SOUL_MONSTER_FUZZY_WURM_CRAWLER_PLUS_POWER.title": "Burrow Setup+",
+  "ABSTS2MOD-SOUL_MONSTER_FUZZY_WURM_CRAWLER_PLUS_POWER.description": "At the start of your next turn, add [blue]1[/blue] [gold]Burrow Raid+[/gold] to your hand.",
+  "ABSTS2MOD-SOUL_MONSTER_FUZZY_WURM_CRAWLER_PLUS_POWER.smartDescription": "At the start of your next turn, add [blue]{Amount}[/blue] [gold]Burrow Raid+[/gold] to your hand."
 }
