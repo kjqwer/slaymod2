@@ -164,7 +164,7 @@
   "ABSTS2MOD-SOUL_MONSTER_PHROG_PARASITE.title": "异蛙寄生虫",
   "ABSTS2MOD-SOUL_MONSTER_PHROG_PARASITE.description": "移除目标所有[gold]格挡[/gold]。每以此法移除 [blue]{BlockThreshold}[/blue] 点[gold]格挡[/gold]，施加 [blue]{VulnerablePower}[/blue] 层[gold]易伤[/gold]与 [blue]{PoisonPower}[/blue] 层[gold]中毒[/gold]。",
   "ABSTS2MOD-SOUL_MONSTER_PUNCH_CONSTRUCT.title": "拳击构装体",
-  "ABSTS2MOD-SOUL_MONSTER_PUNCH_CONSTRUCT.description": "抽 [blue]1[/blue] 张牌。",
+  "ABSTS2MOD-SOUL_MONSTER_PUNCH_CONSTRUCT.description": "获得 [blue]{ArtifactPower:diff()}[/blue] 层[gold]人工制品[/gold]。",
   "ABSTS2MOD-SOUL_MONSTER_QUEEN.title": "女王",
   "ABSTS2MOD-SOUL_MONSTER_QUEEN.description": "抽 [blue]1[/blue] 张牌。",
   "ABSTS2MOD-SOUL_MONSTER_ROCKET.title": "火箭",

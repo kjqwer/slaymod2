@@ -164,7 +164,7 @@
   "ABSTS2MOD-SOUL_MONSTER_PHROG_PARASITE.title": "Phrog Parasite",
   "ABSTS2MOD-SOUL_MONSTER_PHROG_PARASITE.description": "Remove all [gold]Block[/gold] from the target. For every [blue]{BlockThreshold}[/blue] Block removed this way, apply [blue]{VulnerablePower}[/blue] [gold]Vulnerable[/gold] and [blue]{PoisonPower}[/blue] [gold]Poison[/gold].",
   "ABSTS2MOD-SOUL_MONSTER_PUNCH_CONSTRUCT.title": "Punch Construct",
-  "ABSTS2MOD-SOUL_MONSTER_PUNCH_CONSTRUCT.description": "Draw [blue]1[/blue] card.",
+  "ABSTS2MOD-SOUL_MONSTER_PUNCH_CONSTRUCT.description": "Gain [blue]{ArtifactPower:diff()}[/blue] [gold]Artifact[/gold].",
   "ABSTS2MOD-SOUL_MONSTER_QUEEN.title": "Queen",
   "ABSTS2MOD-SOUL_MONSTER_QUEEN.description": "Draw [blue]1[/blue] card.",
   "ABSTS2MOD-SOUL_MONSTER_ROCKET.title": "Rocket",
