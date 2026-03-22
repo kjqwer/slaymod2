@@ -6,7 +6,7 @@
   "ABSTS2MOD-SOUL_MONSTER_ARCHITECT.title": "The Architect",
   "ABSTS2MOD-SOUL_MONSTER_ARCHITECT.description": "Draw [blue]1[/blue] card.",
   "ABSTS2MOD-SOUL_MONSTER_ASSASSIN_RUBY_RAIDER.title": "Assassin Raider",
-  "ABSTS2MOD-SOUL_MONSTER_ASSASSIN_RUBY_RAIDER.description": "Draw [blue]1[/blue] card.",
+  "ABSTS2MOD-SOUL_MONSTER_ASSASSIN_RUBY_RAIDER.description": "Gain [blue]{SoulMonsterAssassinRubyRaiderStealthPower}[/blue] [gold]Stealth[/gold] (the next time you are attacked, reduce damage by 100%). Your next Attack card deals [blue]{SoulMonsterAssassinRubyRaiderAmbushPower}[/blue]x damage.",
   "ABSTS2MOD-SOUL_MONSTER_ATTACK_MOVE_MONSTER.title": "Attack Move Monster",
   "ABSTS2MOD-SOUL_MONSTER_ATTACK_MOVE_MONSTER.description": "Draw [blue]1[/blue] card.",
   "ABSTS2MOD-SOUL_MONSTER_AXEBOT.title": "Axebot",

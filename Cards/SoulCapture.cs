@@ -26,7 +26,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace ABStS2Mod.Cards;
 
 [Pool(typeof(ColorlessCardPool))]
-public sealed class SoulCapture() : CustomCardModel(2, CardType.Attack, CardRarity.Rare, TargetType.AnyEnemy)
+public sealed class SoulCapture() : CustomCardModel(2, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars
         => new DynamicVar[] { new DamageVar(15m, ValueProp.Move) };

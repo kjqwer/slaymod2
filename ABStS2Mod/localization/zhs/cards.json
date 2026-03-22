@@ -6,7 +6,7 @@
   "ABSTS2MOD-SOUL_MONSTER_ARCHITECT.title": "建筑师",
   "ABSTS2MOD-SOUL_MONSTER_ARCHITECT.description": "抽 [blue]1[/blue] 张牌。",
   "ABSTS2MOD-SOUL_MONSTER_ASSASSIN_RUBY_RAIDER.title": "劫掠者刺客",
-  "ABSTS2MOD-SOUL_MONSTER_ASSASSIN_RUBY_RAIDER.description": "抽 [blue]1[/blue] 张牌。",
+  "ABSTS2MOD-SOUL_MONSTER_ASSASSIN_RUBY_RAIDER.description": "获得 [blue]{SoulMonsterAssassinRubyRaiderStealthPower}[/blue] 层[gold]隐匿[/gold]（下一次受到攻击时，伤害降低100%）。下一次你打出的攻击牌将造成 [blue]{SoulMonsterAssassinRubyRaiderAmbushPower}[/blue] 倍伤害。",
   "ABSTS2MOD-SOUL_MONSTER_ATTACK_MOVE_MONSTER.title": "攻击行动怪物",
   "ABSTS2MOD-SOUL_MONSTER_ATTACK_MOVE_MONSTER.description": "抽 [blue]1[/blue] 张牌。",
   "ABSTS2MOD-SOUL_MONSTER_AXEBOT.title": "巨斧机器人",
