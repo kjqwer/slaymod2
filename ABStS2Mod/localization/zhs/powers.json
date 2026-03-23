@@ -46,5 +46,11 @@
   "ABSTS2MOD-SOUL_MONSTER_WATERFALL_POWER.smartDescription": "提高[gold]瀑流倒计时[/gold]的伤害。当前层数：[blue]{Amount}[/blue]。",
   "ABSTS2MOD-SOUL_MONSTER_WATERFALL_COUNTDOWN_POWER.title": "瀑流倒计时",
   "ABSTS2MOD-SOUL_MONSTER_WATERFALL_COUNTDOWN_POWER.description": "两回合后，对所有敌人造成 [blue]15[/blue] 点伤害。",
-  "ABSTS2MOD-SOUL_MONSTER_WATERFALL_COUNTDOWN_POWER.smartDescription": "两回合后，对所有敌人造成 [blue]{Amount}[/blue] 点伤害。"
+  "ABSTS2MOD-SOUL_MONSTER_WATERFALL_COUNTDOWN_POWER.smartDescription": "两回合后，对所有敌人造成 [blue]{Amount}[/blue] 点伤害。",
+  "ABSTS2MOD-SOUL_MONSTER_HUNTER_KILLER_POWER.title": "猎杀律动",
+  "ABSTS2MOD-SOUL_MONSTER_HUNTER_KILLER_POWER.description": "回合内每打出一张牌，获得 [blue]1[/blue] 点临时[gold]力量[/gold]和[gold]敏捷[/gold]。",
+  "ABSTS2MOD-SOUL_MONSTER_HUNTER_KILLER_POWER.smartDescription": "回合内每打出一张牌，获得 [blue]{Amount}[/blue] 点临时[gold]力量[/gold]和[gold]敏捷[/gold]。",
+  "ABSTS2MOD-SOUL_MONSTER_THE_OBSCURA_POWER.title": "幻幕脉动",
+  "ABSTS2MOD-SOUL_MONSTER_THE_OBSCURA_POWER.description": "在你的回合开始时，[gold]召唤[/gold] [blue]10[/blue]。",
+  "ABSTS2MOD-SOUL_MONSTER_THE_OBSCURA_POWER.smartDescription": "在你的回合开始时，[gold]召唤[/gold] [blue]{Amount}[/blue]。"
 }

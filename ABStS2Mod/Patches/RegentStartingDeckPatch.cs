@@ -22,9 +22,9 @@ public static class RegentStartingDeckPatch
         {
             newDeck.Add(ModelDb.Card<SoulCapture>());
             newDeck.Add(ModelDb.Card<SoulCapture>());
-            newDeck.Add(ModelDb.Card<SoulMonsterTunneler>());
-            newDeck.Add(ModelDb.Card<SoulMonsterSpinyToad>());
-            newDeck.Add(ModelDb.Card<SoulMonsterChomper>());
+            newDeck.Add(ModelDb.Card<SoulMonsterHunterKiller>());
+            newDeck.Add(ModelDb.Card<SoulMonsterTheObscura>());
+            newDeck.Add(ModelDb.Card<SoulMonsterParafright>());
             for (int i = 0; i < 2; i++)
             {
                 int strikeIndex = newDeck.FindIndex(card => card.Id.Entry == RegentStrikeId);

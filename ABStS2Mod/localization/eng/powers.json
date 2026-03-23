@@ -46,5 +46,11 @@
   "ABSTS2MOD-SOUL_MONSTER_WATERFALL_POWER.smartDescription": "Increases the damage of [gold]Waterfall Countdown[/gold]. Current stacks: [blue]{Amount}[/blue].",
   "ABSTS2MOD-SOUL_MONSTER_WATERFALL_COUNTDOWN_POWER.title": "Waterfall Countdown",
   "ABSTS2MOD-SOUL_MONSTER_WATERFALL_COUNTDOWN_POWER.description": "In 2 turns, deal [blue]15[/blue] damage to all enemies.",
-  "ABSTS2MOD-SOUL_MONSTER_WATERFALL_COUNTDOWN_POWER.smartDescription": "In 2 turns, deal [blue]{Amount}[/blue] damage to all enemies."
+  "ABSTS2MOD-SOUL_MONSTER_WATERFALL_COUNTDOWN_POWER.smartDescription": "In 2 turns, deal [blue]{Amount}[/blue] damage to all enemies.",
+  "ABSTS2MOD-SOUL_MONSTER_HUNTER_KILLER_POWER.title": "Predation Rhythm",
+  "ABSTS2MOD-SOUL_MONSTER_HUNTER_KILLER_POWER.description": "Whenever you play a card this turn, gain [blue]1[/blue] temporary [gold]Strength[/gold] and [gold]Dexterity[/gold].",
+  "ABSTS2MOD-SOUL_MONSTER_HUNTER_KILLER_POWER.smartDescription": "Whenever you play a card this turn, gain [blue]{Amount}[/blue] temporary [gold]Strength[/gold] and [gold]Dexterity[/gold].",
+  "ABSTS2MOD-SOUL_MONSTER_THE_OBSCURA_POWER.title": "Illusion Pulse",
+  "ABSTS2MOD-SOUL_MONSTER_THE_OBSCURA_POWER.description": "At the start of your turn, [gold]Summon[/gold] [blue]10[/blue].",
+  "ABSTS2MOD-SOUL_MONSTER_THE_OBSCURA_POWER.smartDescription": "At the start of your turn, [gold]Summon[/gold] [blue]{Amount}[/blue]."
 }
