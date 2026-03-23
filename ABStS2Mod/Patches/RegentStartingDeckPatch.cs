@@ -22,8 +22,8 @@ public static class RegentStartingDeckPatch
         {
 //          newDeck.Add(ModelDb.Card<SoulCapture>());
 //          newDeck.Add(ModelDb.Card<SoulCapture>());
-            newDeck.Add(ModelDb.Card<SoulMonsterSlimedBerserker>());
-            newDeck.Add(ModelDb.Card<SoulMonsterOwlMagistrate>());
+            // newDeck.Add(ModelDb.Card<SoulMonsterSlimedBerserker>());
+            // newDeck.Add(ModelDb.Card<SoulMonsterOwlMagistrate>());
             // newDeck.Add(ModelDb.Card<SoulMonsterOwlMagistrate>());
             // for (int i = 0; i < 2; i++)
             // {
