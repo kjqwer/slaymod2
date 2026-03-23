@@ -58,7 +58,7 @@
   "ABSTS2MOD-SOUL_MONSTER_DAMP_CULTIST.title": "Damp Cultist",
   "ABSTS2MOD-SOUL_MONSTER_DAMP_CULTIST.description": "Gain [blue]{RitualPower}[/blue] [gold]Ritual[/gold].",
   "ABSTS2MOD-SOUL_MONSTER_DECIMILLIPEDE_SEGMENT.title": "Decimillipede",
-  "ABSTS2MOD-SOUL_MONSTER_DECIMILLIPEDE_SEGMENT.description": "Draw [blue]1[/blue] card.",
+  "ABSTS2MOD-SOUL_MONSTER_DECIMILLIPEDE_SEGMENT.description": "[gold]Exhaust[/gold]. Gain [blue]{SoulMonsterDecimillipedeSegmentRevivePower}[/blue] [gold]Revive[/gold] (when you would die, lose 1 stack and revive with [blue]25%[/blue] HP).",
   "ABSTS2MOD-SOUL_MONSTER_DEVOTED_SCULPTOR.title": "Devoted Sculptor",
   "ABSTS2MOD-SOUL_MONSTER_DEVOTED_SCULPTOR.description": "Draw [blue]1[/blue] card.",
   "ABSTS2MOD-SOUL_MONSTER_DOOR.title": "Door",

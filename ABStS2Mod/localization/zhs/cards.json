@@ -58,7 +58,7 @@
   "ABSTS2MOD-SOUL_MONSTER_DAMP_CULTIST.title": "潮湿邪教徒",
   "ABSTS2MOD-SOUL_MONSTER_DAMP_CULTIST.description": "获得 [blue]{RitualPower}[/blue] 层[gold]仪式[/gold]。",
   "ABSTS2MOD-SOUL_MONSTER_DECIMILLIPEDE_SEGMENT.title": "残杀千足虫",
-  "ABSTS2MOD-SOUL_MONSTER_DECIMILLIPEDE_SEGMENT.description": "抽 [blue]1[/blue] 张牌。",
+  "ABSTS2MOD-SOUL_MONSTER_DECIMILLIPEDE_SEGMENT.description": "[gold]消耗[/gold]。获得 [blue]{SoulMonsterDecimillipedeSegmentRevivePower}[/blue] 层[gold]复生[/gold]（当你将要死亡时，失去1层并以 [blue]25%[/blue] 生命复活）。",
   "ABSTS2MOD-SOUL_MONSTER_DEVOTED_SCULPTOR.title": "虔诚雕刻师",
   "ABSTS2MOD-SOUL_MONSTER_DEVOTED_SCULPTOR.description": "抽 [blue]1[/blue] 张牌。",
   "ABSTS2MOD-SOUL_MONSTER_DOOR.title": "门扉",

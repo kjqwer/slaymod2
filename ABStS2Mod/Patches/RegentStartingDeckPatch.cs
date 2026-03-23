@@ -22,7 +22,7 @@ public static class RegentStartingDeckPatch
         {
             newDeck.Add(ModelDb.Card<SoulCapture>());
             newDeck.Add(ModelDb.Card<SoulCapture>());
-            newDeck.Add(ModelDb.Card<SoulMonsterEntomancer>());
+            newDeck.Add(ModelDb.Card<SoulMonsterDecimillipedeSegment>());
             for (int i = 0; i < 2; i++)
             {
                 int strikeIndex = newDeck.FindIndex(card => card.Id.Entry == RegentStrikeId);
