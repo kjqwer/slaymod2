@@ -58,5 +58,8 @@
   "ABSTS2MOD-SOUL_MONSTER_LOUSE_PROGENITOR_POWER.smartDescription": "每当你在本回合打出卡牌时，获得 [blue]{Amount}[/blue] 层[gold]覆甲[/gold]。",
   "ABSTS2MOD-SOUL_MONSTER_THE_OBSCURA_POWER.title": "幻幕脉动",
   "ABSTS2MOD-SOUL_MONSTER_THE_OBSCURA_POWER.description": "在你的回合开始时，[gold]召唤[/gold] [blue]10[/blue]。",
-  "ABSTS2MOD-SOUL_MONSTER_THE_OBSCURA_POWER.smartDescription": "在你的回合开始时，[gold]召唤[/gold] [blue]{Amount}[/blue]。"
+  "ABSTS2MOD-SOUL_MONSTER_THE_OBSCURA_POWER.smartDescription": "在你的回合开始时，[gold]召唤[/gold] [blue]{Amount}[/blue]。",
+  "ABSTS2MOD-SOUL_MONSTER_OVICOPTER_POWER.title": "猎空产卵",
+  "ABSTS2MOD-SOUL_MONSTER_OVICOPTER_POWER.description": "在你的回合开始时，[gold]召唤[/gold] [blue]2[/blue]，并指挥[gold]奥斯提[/gold]对所有敌人造成等同其当前生命值的伤害。",
+  "ABSTS2MOD-SOUL_MONSTER_OVICOPTER_POWER.smartDescription": "在你的回合开始时，[gold]召唤[/gold] [blue]{Amount}[/blue]，并指挥[gold]奥斯提[/gold]对所有敌人造成等同其当前生命值的伤害。"
 }
