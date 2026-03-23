@@ -66,7 +66,7 @@
   "ABSTS2MOD-SOUL_MONSTER_DOORMAKER.title": "Doormaker",
   "ABSTS2MOD-SOUL_MONSTER_DOORMAKER.description": "Draw [blue]1[/blue] card.",
   "ABSTS2MOD-SOUL_MONSTER_ENTOMANCER.title": "Entomancer",
-  "ABSTS2MOD-SOUL_MONSTER_ENTOMANCER.description": "Draw [blue]1[/blue] card.",
+  "ABSTS2MOD-SOUL_MONSTER_ENTOMANCER.description": "Gain [blue]{SoulMonsterEntomancerPower}[/blue] [gold]Insect Counterplay[/gold] (whenever you are attacked, apply that much [gold]Weak[/gold] and [gold]Vulnerable[/gold] to all enemies; every [blue]3[/blue] attacks taken, all enemies lose [blue]1[/blue] [gold]Strength[/gold]).",
   "ABSTS2MOD-SOUL_MONSTER_EXOSKELETON.title": "Exoskeleton",
   "ABSTS2MOD-SOUL_MONSTER_EXOSKELETON.description": "Gain [blue]{SoulMonsterExoskeletonHardToKillPower:diff()}[/blue] [gold]Exoskeleton Guard[/gold].",
   "ABSTS2MOD-SOUL_MONSTER_EYE_WITH_TEETH.title": "Eye With Teeth",

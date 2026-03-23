@@ -64,5 +64,8 @@
   "ABSTS2MOD-SOUL_MONSTER_OVICOPTER_POWER.smartDescription": "At the start of your turn, [gold]Summon[/gold] [blue]{Amount}[/blue], then command [gold]Osty[/gold] to deal damage equal to its current HP to all enemies.",
   "ABSTS2MOD-SOUL_MONSTER_INFESTED_PRISM_POWER.title": "Prism Tactics",
   "ABSTS2MOD-SOUL_MONSTER_INFESTED_PRISM_POWER.description": "Your first [blue]1[/blue] Attack card each turn costs [blue]0[/blue]{energyPrefix:energyIcons(1)}.",
-  "ABSTS2MOD-SOUL_MONSTER_INFESTED_PRISM_POWER.smartDescription": "Your first [blue]{Amount}[/blue] Attack cards each turn cost [blue]0[/blue]{energyPrefix:energyIcons(1)}."
+  "ABSTS2MOD-SOUL_MONSTER_INFESTED_PRISM_POWER.smartDescription": "Your first [blue]{Amount}[/blue] Attack cards each turn cost [blue]0[/blue]{energyPrefix:energyIcons(1)}.",
+  "ABSTS2MOD-SOUL_MONSTER_ENTOMANCER_POWER.title": "Insect Counterplay",
+  "ABSTS2MOD-SOUL_MONSTER_ENTOMANCER_POWER.description": "Whenever you are attacked, apply [blue]2[/blue] [gold]Weak[/gold] and [gold]Vulnerable[/gold] to all enemies. Every [blue]3[/blue] attacks taken, all enemies lose [blue]1[/blue] [gold]Strength[/gold].",
+  "ABSTS2MOD-SOUL_MONSTER_ENTOMANCER_POWER.smartDescription": "Whenever you are attacked, apply [blue]{Amount}[/blue] [gold]Weak[/gold] and [gold]Vulnerable[/gold] to all enemies. Every [blue]3[/blue] attacks taken, all enemies lose [blue]1[/blue] [gold]Strength[/gold]."
 }

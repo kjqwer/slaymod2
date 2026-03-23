@@ -64,5 +64,8 @@
   "ABSTS2MOD-SOUL_MONSTER_OVICOPTER_POWER.smartDescription": "在你的回合开始时，[gold]召唤[/gold] [blue]{Amount}[/blue]，并指挥[gold]奥斯提[/gold]对所有敌人造成等同其当前生命值的伤害。",
   "ABSTS2MOD-SOUL_MONSTER_INFESTED_PRISM_POWER.title": "棱柱战术",
   "ABSTS2MOD-SOUL_MONSTER_INFESTED_PRISM_POWER.description": "每回合你打出的前 [blue]1[/blue] 张攻击牌耗能为[blue]0[/blue]{energyPrefix:energyIcons(1)}。",
-  "ABSTS2MOD-SOUL_MONSTER_INFESTED_PRISM_POWER.smartDescription": "每回合你打出的前 [blue]{Amount}[/blue] 张攻击牌耗能为[blue]0[/blue]{energyPrefix:energyIcons(1)}。"
+  "ABSTS2MOD-SOUL_MONSTER_INFESTED_PRISM_POWER.smartDescription": "每回合你打出的前 [blue]{Amount}[/blue] 张攻击牌耗能为[blue]0[/blue]{energyPrefix:energyIcons(1)}。",
+  "ABSTS2MOD-SOUL_MONSTER_ENTOMANCER_POWER.title": "虫术反制",
+  "ABSTS2MOD-SOUL_MONSTER_ENTOMANCER_POWER.description": "每当你受到攻击时，对所有敌人施加 [blue]2[/blue] 层[gold]虚弱[/gold]和[gold]易伤[/gold]。每累计受到 [blue]3[/blue] 次攻击，使所有敌人失去 [blue]1[/blue] 点[gold]力量[/gold]。",
+  "ABSTS2MOD-SOUL_MONSTER_ENTOMANCER_POWER.smartDescription": "每当你受到攻击时，对所有敌人施加 [blue]{Amount}[/blue] 层[gold]虚弱[/gold]和[gold]易伤[/gold]。每累计受到 [blue]3[/blue] 次攻击，使所有敌人失去 [blue]1[/blue] 点[gold]力量[/gold]。"
 }

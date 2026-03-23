@@ -66,7 +66,7 @@
   "ABSTS2MOD-SOUL_MONSTER_DOORMAKER.title": "门扉缔造者",
   "ABSTS2MOD-SOUL_MONSTER_DOORMAKER.description": "抽 [blue]1[/blue] 张牌。",
   "ABSTS2MOD-SOUL_MONSTER_ENTOMANCER.title": "蜂群术士",
-  "ABSTS2MOD-SOUL_MONSTER_ENTOMANCER.description": "抽 [blue]1[/blue] 张牌。",
+  "ABSTS2MOD-SOUL_MONSTER_ENTOMANCER.description": "获得 [blue]{SoulMonsterEntomancerPower}[/blue] 层[gold]虫术反制[/gold]（每当你受到攻击时，对所有敌人施加同等层数的[gold]虚弱[/gold]和[gold]易伤[/gold]；每累计受到 [blue]3[/blue] 次攻击，使所有敌人失去 [blue]1[/blue] 点[gold]力量[/gold]）。",
   "ABSTS2MOD-SOUL_MONSTER_EXOSKELETON.title": "外骨骼虫",
   "ABSTS2MOD-SOUL_MONSTER_EXOSKELETON.description": "获得 [blue]{SoulMonsterExoskeletonHardToKillPower:diff()}[/blue] 点[gold]外骨骼免伤[/gold]。",
   "ABSTS2MOD-SOUL_MONSTER_EYE_WITH_TEETH.title": "利齿之眼",
