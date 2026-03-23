@@ -118,7 +118,7 @@
   "ABSTS2MOD-SOUL_MONSTER_KIN_PRIEST.title": "同族神官",
   "ABSTS2MOD-SOUL_MONSTER_KIN_PRIEST.description": "造成 [blue]{Damage}[/blue] 点伤害。施加 [blue]{WeakPower}[/blue] 层[gold]虚弱[/gold]和 [blue]{VulnerablePower}[/blue] 层[gold]易伤[/gold]。",
   "ABSTS2MOD-SOUL_MONSTER_KNOWLEDGE_DEMON.title": "知识恶魔",
-  "ABSTS2MOD-SOUL_MONSTER_KNOWLEDGE_DEMON.description": "抽 [blue]1[/blue] 张牌。",
+  "ABSTS2MOD-SOUL_MONSTER_KNOWLEDGE_DEMON.description": "获得 [blue]{SoulMonsterKnowledgeBlessingPower}[/blue] 层[gold]知识的祝福[/gold]。若你已有 [blue]3[/blue] 层[gold]知识的祝福[/gold]，改为对所有敌人造成 [blue]{Damage}[/blue] 点伤害。",
   "ABSTS2MOD-SOUL_MONSTER_LAGAVULIN_MATRIARCH.title": "乐加维林族母",
   "ABSTS2MOD-SOUL_MONSTER_LAGAVULIN_MATRIARCH.description": "获得 [blue]{PlatingPower:diff()}[/blue] 层[gold]覆甲[/gold]。获得[gold]炸弹[/gold] [blue]{Turns}[/blue] 回合后对你造成 [blue]{BombDamage:diff()}[/blue] 点伤害。",
   "ABSTS2MOD-SOUL_MONSTER_LEAF_SLIME_M.title": "树叶史莱姆（中）",

@@ -118,7 +118,7 @@
   "ABSTS2MOD-SOUL_MONSTER_KIN_PRIEST.title": "Kin Priest",
   "ABSTS2MOD-SOUL_MONSTER_KIN_PRIEST.description": "Deal [blue]{Damage}[/blue] damage. Apply [blue]{WeakPower}[/blue] [gold]Weak[/gold] and [blue]{VulnerablePower}[/blue] [gold]Vulnerable[/gold].",
   "ABSTS2MOD-SOUL_MONSTER_KNOWLEDGE_DEMON.title": "Knowledge Demon",
-  "ABSTS2MOD-SOUL_MONSTER_KNOWLEDGE_DEMON.description": "Draw [blue]1[/blue] card.",
+  "ABSTS2MOD-SOUL_MONSTER_KNOWLEDGE_DEMON.description": "Gain [blue]{SoulMonsterKnowledgeBlessingPower}[/blue] [gold]Knowledge's Blessing[/gold]. If you already have [blue]3[/blue] [gold]Knowledge's Blessing[/gold], deal [blue]{Damage}[/blue] damage to all enemies instead.",
   "ABSTS2MOD-SOUL_MONSTER_LAGAVULIN_MATRIARCH.title": "Lagavulin Matriarch",
   "ABSTS2MOD-SOUL_MONSTER_LAGAVULIN_MATRIARCH.description": "Gain [blue]{PlatingPower:diff()}[/blue] [gold]Plated Armor[/gold]. Gain [gold]The Bomb[/gold]: in [blue]{Turns}[/blue] turns, take [blue]{BombDamage:diff()}[/blue] damage.",
   "ABSTS2MOD-SOUL_MONSTER_LEAF_SLIME_M.title": "Leaf Slime (M)",

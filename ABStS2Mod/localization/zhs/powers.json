@@ -79,5 +79,8 @@
   "ABSTS2MOD-SOUL_MONSTER_ROCKET_POWER.smartDescription": "本回合内，你的所有技能牌耗能为[blue]0[/blue]{energyPrefix:energyIcons(1)}。",
   "ABSTS2MOD-SOUL_MONSTER_THE_INSATIABLE_ABYSS_POWER.title": "深渊",
   "ABSTS2MOD-SOUL_MONSTER_THE_INSATIABLE_ABYSS_POWER.description": "每当层数达到 [blue]6[/blue] 时，无视死亡防护效果，立即消灭目标。",
-  "ABSTS2MOD-SOUL_MONSTER_THE_INSATIABLE_ABYSS_POWER.smartDescription": "每当层数达到 [blue]6[/blue] 时，无视死亡防护效果，立即消灭目标。"
+  "ABSTS2MOD-SOUL_MONSTER_THE_INSATIABLE_ABYSS_POWER.smartDescription": "每当层数达到 [blue]6[/blue] 时，无视死亡防护效果，立即消灭目标。",
+  "ABSTS2MOD-SOUL_MONSTER_KNOWLEDGE_BLESSING_POWER.title": "知识的祝福",
+  "ABSTS2MOD-SOUL_MONSTER_KNOWLEDGE_BLESSING_POWER.description": "1层：每回合额外抽 [blue]1[/blue] 张牌。2层：额外获得 [blue]1[/blue] 点{energyPrefix:energyIcons(1)}。3层：在拥有前述效果的基础上，你手牌中的牌耗能减少 [blue]1[/blue]，且[gold]知识恶魔[/gold]耗能为[blue]0[/blue]{energyPrefix:energyIcons(1)}。",
+  "ABSTS2MOD-SOUL_MONSTER_KNOWLEDGE_BLESSING_POWER.smartDescription": "1层：每回合额外抽 [blue]1[/blue] 张牌。2层：额外获得 [blue]1[/blue] 点{energyPrefix:energyIcons(1)}。3层：在拥有前述效果的基础上，你手牌中的牌耗能减少 [blue]1[/blue]，且[gold]知识恶魔[/gold]耗能为[blue]0[/blue]{energyPrefix:energyIcons(1)}。"
 }

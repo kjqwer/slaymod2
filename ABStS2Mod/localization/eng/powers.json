@@ -79,5 +79,8 @@
   "ABSTS2MOD-SOUL_MONSTER_ROCKET_POWER.smartDescription": "This turn, all your Skill cards cost [blue]0[/blue]{energyPrefix:energyIcons(1)}.",
   "ABSTS2MOD-SOUL_MONSTER_THE_INSATIABLE_ABYSS_POWER.title": "Abyss",
   "ABSTS2MOD-SOUL_MONSTER_THE_INSATIABLE_ABYSS_POWER.description": "When this reaches [blue]6[/blue], it ignores death-prevention mechanics and instantly kills the target.",
-  "ABSTS2MOD-SOUL_MONSTER_THE_INSATIABLE_ABYSS_POWER.smartDescription": "When this reaches [blue]6[/blue], it ignores death-prevention mechanics and instantly kills the target."
+  "ABSTS2MOD-SOUL_MONSTER_THE_INSATIABLE_ABYSS_POWER.smartDescription": "When this reaches [blue]6[/blue], it ignores death-prevention mechanics and instantly kills the target.",
+  "ABSTS2MOD-SOUL_MONSTER_KNOWLEDGE_BLESSING_POWER.title": "Knowledge's Blessing",
+  "ABSTS2MOD-SOUL_MONSTER_KNOWLEDGE_BLESSING_POWER.description": "1 stack: draw [blue]1[/blue] extra card each turn. 2 stacks: gain [blue]1[/blue] extra {energyPrefix:energyIcons(1)} each turn. 3 stacks: keep previous effects, reduce cost of cards in your hand by [blue]1[/blue], and [gold]Knowledge Demon[/gold] costs [blue]0[/blue]{energyPrefix:energyIcons(1)}.",
+  "ABSTS2MOD-SOUL_MONSTER_KNOWLEDGE_BLESSING_POWER.smartDescription": "1 stack: draw [blue]1[/blue] extra card each turn. 2 stacks: gain [blue]1[/blue] extra {energyPrefix:energyIcons(1)} each turn. 3 stacks: keep previous effects, reduce cost of cards in your hand by [blue]1[/blue], and [gold]Knowledge Demon[/gold] costs [blue]0[/blue]{energyPrefix:energyIcons(1)}."
 }
