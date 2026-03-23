@@ -13,3 +13,4 @@ tools/
 *cs.uid
 *.user
 *.log
+.local-mods/
