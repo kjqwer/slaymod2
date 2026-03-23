@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace ABStS2Mod.Cards.MonsterSouls;
 
 [Pool(typeof(ColorlessCardPool))]
-public sealed class SoulMonsterBurrowRaid() : CustomCardModel(0, CardType.Attack, CardRarity.Token, TargetType.RandomEnemy)
+public sealed class SoulMonsterBurrowRaid() : CustomCardModel(0, CardType.Attack, CardRarity.Event, TargetType.RandomEnemy)
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords => new CardKeyword[]
     {
