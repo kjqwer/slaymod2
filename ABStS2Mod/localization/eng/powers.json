@@ -34,5 +34,11 @@
   "ABSTS2MOD-SOUL_MONSTER_SEWER_CLAM_POWER.smartDescription": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Block[/gold].",
   "ABSTS2MOD-SOUL_MONSTER_FOSSIL_STALKER_POWER.title": "Suck",
   "ABSTS2MOD-SOUL_MONSTER_FOSSIL_STALKER_POWER.description": "Whenever you deal unblocked attack damage, gain [blue]1[/blue] [gold]Strength[/gold].",
-  "ABSTS2MOD-SOUL_MONSTER_FOSSIL_STALKER_POWER.smartDescription": "Whenever you deal unblocked attack damage, gain [blue]{Amount}[/blue] [gold]Strength[/gold]."
+  "ABSTS2MOD-SOUL_MONSTER_FOSSIL_STALKER_POWER.smartDescription": "Whenever you deal unblocked attack damage, gain [blue]{Amount}[/blue] [gold]Strength[/gold].",
+  "ABSTS2MOD-SOUL_MONSTER_TERROR_EEL_POWER.title": "Terror Prep",
+  "ABSTS2MOD-SOUL_MONSTER_TERROR_EEL_POWER.description": "At the start of your turn, gain [blue]5[/blue] [gold]Vigor[/gold] and [blue]1[/blue] [gold]Strength[/gold].",
+  "ABSTS2MOD-SOUL_MONSTER_TERROR_EEL_POWER.smartDescription": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Vigor[/gold] and [blue]1[/blue] [gold]Strength[/gold].",
+  "ABSTS2MOD-SOUL_MONSTER_PHANTASMAL_GARDENER_POWER.title": "Phantasmal Armor",
+  "ABSTS2MOD-SOUL_MONSTER_PHANTASMAL_GARDENER_POWER.description": "The first time you take damage each turn, gain [blue]20[/blue] [gold]Block[/gold].",
+  "ABSTS2MOD-SOUL_MONSTER_PHANTASMAL_GARDENER_POWER.smartDescription": "The first time you take damage each turn, gain [blue]{Amount}[/blue] [gold]Block[/gold]."
 }
