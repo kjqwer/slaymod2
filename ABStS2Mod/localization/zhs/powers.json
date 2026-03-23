@@ -61,5 +61,8 @@
   "ABSTS2MOD-SOUL_MONSTER_THE_OBSCURA_POWER.smartDescription": "在你的回合开始时，[gold]召唤[/gold] [blue]{Amount}[/blue]。",
   "ABSTS2MOD-SOUL_MONSTER_OVICOPTER_POWER.title": "猎空产卵",
   "ABSTS2MOD-SOUL_MONSTER_OVICOPTER_POWER.description": "在你的回合开始时，[gold]召唤[/gold] [blue]2[/blue]，并指挥[gold]奥斯提[/gold]对所有敌人造成等同其当前生命值的伤害。",
-  "ABSTS2MOD-SOUL_MONSTER_OVICOPTER_POWER.smartDescription": "在你的回合开始时，[gold]召唤[/gold] [blue]{Amount}[/blue]，并指挥[gold]奥斯提[/gold]对所有敌人造成等同其当前生命值的伤害。"
+  "ABSTS2MOD-SOUL_MONSTER_OVICOPTER_POWER.smartDescription": "在你的回合开始时，[gold]召唤[/gold] [blue]{Amount}[/blue]，并指挥[gold]奥斯提[/gold]对所有敌人造成等同其当前生命值的伤害。",
+  "ABSTS2MOD-SOUL_MONSTER_INFESTED_PRISM_POWER.title": "棱柱战术",
+  "ABSTS2MOD-SOUL_MONSTER_INFESTED_PRISM_POWER.description": "每回合你打出的前 [blue]1[/blue] 张攻击牌耗能为[blue]0[/blue]{energyPrefix:energyIcons(1)}。",
+  "ABSTS2MOD-SOUL_MONSTER_INFESTED_PRISM_POWER.smartDescription": "每回合你打出的前 [blue]{Amount}[/blue] 张攻击牌耗能为[blue]0[/blue]{energyPrefix:energyIcons(1)}。"
 }

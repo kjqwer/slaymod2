@@ -108,7 +108,7 @@
   "ABSTS2MOD-SOUL_MONSTER_HUNTER_KILLER.title": "Hunter Killer",
   "ABSTS2MOD-SOUL_MONSTER_HUNTER_KILLER.description": "Gain [blue]{SoulMonsterHunterKillerPower:diff()}[/blue] [gold]Predation Rhythm[/gold] (whenever you play a card this turn, gain [blue]1[/blue] temporary [gold]Strength[/gold] and [gold]Dexterity[/gold]).",
   "ABSTS2MOD-SOUL_MONSTER_INFESTED_PRISM.title": "Infested Prism",
-  "ABSTS2MOD-SOUL_MONSTER_INFESTED_PRISM.description": "Draw [blue]1[/blue] card.",
+  "ABSTS2MOD-SOUL_MONSTER_INFESTED_PRISM.description": "Gain [blue]{LethalityPower:diff()}[/blue]% [gold]Lethality[/gold] (your first Attack each turn deals bonus damage), and make your first [blue]{SoulMonsterInfestedPrismPower:diff()}[/blue] Attack each turn cost 0.",
   "ABSTS2MOD-SOUL_MONSTER_INKLET.title": "Inklet",
   "ABSTS2MOD-SOUL_MONSTER_INKLET.description": "Gain [blue]{SlipperyPower}[/blue] [gold]Slippery[/gold].",
   "ABSTS2MOD-SOUL_MONSTER_BURROW_RAID.title": "Burrow Raid",
