@@ -70,5 +70,11 @@
   "ABSTS2MOD-SOUL_MONSTER_ENTOMANCER_POWER.smartDescription": "Whenever you are attacked, apply [blue]{Amount}[/blue] [gold]Weak[/gold] and [gold]Vulnerable[/gold] to all enemies. Every [blue]3[/blue] attacks taken, all enemies lose [blue]1[/blue] [gold]Strength[/gold].",
   "ABSTS2MOD-SOUL_MONSTER_DECIMILLIPEDE_SEGMENT_REVIVE_POWER.title": "Revive",
   "ABSTS2MOD-SOUL_MONSTER_DECIMILLIPEDE_SEGMENT_REVIVE_POWER.description": "When you would die, lose [blue]1[/blue] stack and revive with [blue]25%[/blue] HP.",
-  "ABSTS2MOD-SOUL_MONSTER_DECIMILLIPEDE_SEGMENT_REVIVE_POWER.smartDescription": "When you would die, lose [blue]1[/blue] stack and revive with [blue]25%[/blue] HP."
+  "ABSTS2MOD-SOUL_MONSTER_DECIMILLIPEDE_SEGMENT_REVIVE_POWER.smartDescription": "When you would die, lose [blue]1[/blue] stack and revive with [blue]25%[/blue] HP.",
+  "ABSTS2MOD-SOUL_MONSTER_CRUSHER_POWER.title": "Crushing Stance",
+  "ABSTS2MOD-SOUL_MONSTER_CRUSHER_POWER.description": "This turn, all your Attack cards cost [blue]0[/blue]{energyPrefix:energyIcons(1)} and deal double damage.",
+  "ABSTS2MOD-SOUL_MONSTER_CRUSHER_POWER.smartDescription": "This turn, all your Attack cards cost [blue]0[/blue]{energyPrefix:energyIcons(1)} and deal double damage.",
+  "ABSTS2MOD-SOUL_MONSTER_ROCKET_POWER.title": "Rocket Engine",
+  "ABSTS2MOD-SOUL_MONSTER_ROCKET_POWER.description": "This turn, all your Skill cards cost [blue]0[/blue]{energyPrefix:energyIcons(1)}.",
+  "ABSTS2MOD-SOUL_MONSTER_ROCKET_POWER.smartDescription": "This turn, all your Skill cards cost [blue]0[/blue]{energyPrefix:energyIcons(1)}."
 }

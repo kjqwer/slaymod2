@@ -70,5 +70,11 @@
   "ABSTS2MOD-SOUL_MONSTER_ENTOMANCER_POWER.smartDescription": "每当你受到攻击时，对所有敌人施加 [blue]{Amount}[/blue] 层[gold]虚弱[/gold]和[gold]易伤[/gold]。每累计受到 [blue]3[/blue] 次攻击，使所有敌人失去 [blue]1[/blue] 点[gold]力量[/gold]。",
   "ABSTS2MOD-SOUL_MONSTER_DECIMILLIPEDE_SEGMENT_REVIVE_POWER.title": "复生",
   "ABSTS2MOD-SOUL_MONSTER_DECIMILLIPEDE_SEGMENT_REVIVE_POWER.description": "当你将要死亡时，失去 [blue]1[/blue] 层并以 [blue]25%[/blue] 生命复活。",
-  "ABSTS2MOD-SOUL_MONSTER_DECIMILLIPEDE_SEGMENT_REVIVE_POWER.smartDescription": "当你将要死亡时，失去 [blue]1[/blue] 层并以 [blue]25%[/blue] 生命复活。"
+  "ABSTS2MOD-SOUL_MONSTER_DECIMILLIPEDE_SEGMENT_REVIVE_POWER.smartDescription": "当你将要死亡时，失去 [blue]1[/blue] 层并以 [blue]25%[/blue] 生命复活。",
+  "ABSTS2MOD-SOUL_MONSTER_CRUSHER_POWER.title": "碾碎姿态",
+  "ABSTS2MOD-SOUL_MONSTER_CRUSHER_POWER.description": "本回合内，你的所有攻击牌耗能为[blue]0[/blue]{energyPrefix:energyIcons(1)}，且造成双倍伤害。",
+  "ABSTS2MOD-SOUL_MONSTER_CRUSHER_POWER.smartDescription": "本回合内，你的所有攻击牌耗能为[blue]0[/blue]{energyPrefix:energyIcons(1)}，且造成双倍伤害。",
+  "ABSTS2MOD-SOUL_MONSTER_ROCKET_POWER.title": "火箭引擎",
+  "ABSTS2MOD-SOUL_MONSTER_ROCKET_POWER.description": "本回合内，你的所有技能牌耗能为[blue]0[/blue]{energyPrefix:energyIcons(1)}。",
+  "ABSTS2MOD-SOUL_MONSTER_ROCKET_POWER.smartDescription": "本回合内，你的所有技能牌耗能为[blue]0[/blue]{energyPrefix:energyIcons(1)}。"
 }
