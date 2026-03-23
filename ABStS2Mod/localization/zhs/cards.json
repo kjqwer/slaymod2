@@ -220,7 +220,7 @@
   "ABSTS2MOD-SOUL_MONSTER_THE_FORGOTTEN.title": "遗忘之物",
   "ABSTS2MOD-SOUL_MONSTER_THE_FORGOTTEN.description": "抽 [blue]1[/blue] 张牌。",
   "ABSTS2MOD-SOUL_MONSTER_THE_INSATIABLE.title": "无厌沙虫",
-  "ABSTS2MOD-SOUL_MONSTER_THE_INSATIABLE.description": "抽 [blue]1[/blue] 张牌。",
+  "ABSTS2MOD-SOUL_MONSTER_THE_INSATIABLE.description": "对所有敌人施加 [blue]{SoulMonsterTheInsatiableAbyssPower}[/blue] 层[gold]深渊[/gold]。",
   "ABSTS2MOD-SOUL_MONSTER_THE_LOST.title": "失落之物",
   "ABSTS2MOD-SOUL_MONSTER_THE_LOST.description": "抽 [blue]1[/blue] 张牌。",
   "ABSTS2MOD-SOUL_MONSTER_THE_OBSCURA.title": "胧光怪",

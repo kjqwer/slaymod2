@@ -76,5 +76,8 @@
   "ABSTS2MOD-SOUL_MONSTER_CRUSHER_POWER.smartDescription": "本回合内，你的所有攻击牌耗能为[blue]0[/blue]{energyPrefix:energyIcons(1)}，且造成双倍伤害。",
   "ABSTS2MOD-SOUL_MONSTER_ROCKET_POWER.title": "火箭引擎",
   "ABSTS2MOD-SOUL_MONSTER_ROCKET_POWER.description": "本回合内，你的所有技能牌耗能为[blue]0[/blue]{energyPrefix:energyIcons(1)}。",
-  "ABSTS2MOD-SOUL_MONSTER_ROCKET_POWER.smartDescription": "本回合内，你的所有技能牌耗能为[blue]0[/blue]{energyPrefix:energyIcons(1)}。"
+  "ABSTS2MOD-SOUL_MONSTER_ROCKET_POWER.smartDescription": "本回合内，你的所有技能牌耗能为[blue]0[/blue]{energyPrefix:energyIcons(1)}。",
+  "ABSTS2MOD-SOUL_MONSTER_THE_INSATIABLE_ABYSS_POWER.title": "深渊",
+  "ABSTS2MOD-SOUL_MONSTER_THE_INSATIABLE_ABYSS_POWER.description": "每当层数达到 [blue]6[/blue] 时，无视死亡防护效果，立即消灭目标。",
+  "ABSTS2MOD-SOUL_MONSTER_THE_INSATIABLE_ABYSS_POWER.smartDescription": "每当层数达到 [blue]6[/blue] 时，无视死亡防护效果，立即消灭目标。"
 }

@@ -76,5 +76,8 @@
   "ABSTS2MOD-SOUL_MONSTER_CRUSHER_POWER.smartDescription": "This turn, all your Attack cards cost [blue]0[/blue]{energyPrefix:energyIcons(1)} and deal double damage.",
   "ABSTS2MOD-SOUL_MONSTER_ROCKET_POWER.title": "Rocket Engine",
   "ABSTS2MOD-SOUL_MONSTER_ROCKET_POWER.description": "This turn, all your Skill cards cost [blue]0[/blue]{energyPrefix:energyIcons(1)}.",
-  "ABSTS2MOD-SOUL_MONSTER_ROCKET_POWER.smartDescription": "This turn, all your Skill cards cost [blue]0[/blue]{energyPrefix:energyIcons(1)}."
+  "ABSTS2MOD-SOUL_MONSTER_ROCKET_POWER.smartDescription": "This turn, all your Skill cards cost [blue]0[/blue]{energyPrefix:energyIcons(1)}.",
+  "ABSTS2MOD-SOUL_MONSTER_THE_INSATIABLE_ABYSS_POWER.title": "Abyss",
+  "ABSTS2MOD-SOUL_MONSTER_THE_INSATIABLE_ABYSS_POWER.description": "When this reaches [blue]6[/blue], it ignores death-prevention mechanics and instantly kills the target.",
+  "ABSTS2MOD-SOUL_MONSTER_THE_INSATIABLE_ABYSS_POWER.smartDescription": "When this reaches [blue]6[/blue], it ignores death-prevention mechanics and instantly kills the target."
 }
