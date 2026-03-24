@@ -124,5 +124,8 @@
   "ABSTS2MOD-SOUL_MONSTER_GLOBE_HEAD_CURRENT_POWER.smartDescription": "Your Power cards cost [blue]{Amount}[/blue] less. Whenever you play a Power card, deal [blue]12[/blue] damage to all enemies.",
   "ABSTS2MOD-SOUL_MONSTER_OWL_MAGISTRATE_AEGIS_POWER.title": "Aegis Eyes",
   "ABSTS2MOD-SOUL_MONSTER_OWL_MAGISTRATE_AEGIS_POWER.description": "Reduce incoming attack damage by [blue]50%[/blue].",
-  "ABSTS2MOD-SOUL_MONSTER_OWL_MAGISTRATE_AEGIS_POWER.smartDescription": "Reduce incoming attack damage by [blue]{Amount}%[/blue]."
+  "ABSTS2MOD-SOUL_MONSTER_OWL_MAGISTRATE_AEGIS_POWER.smartDescription": "Reduce incoming attack damage by [blue]{Amount}%[/blue].",
+  "ABSTS2MOD-SOUL_MONSTER_SHRINKER_BEETLE_SHRINK_POWER.title": "Shrink",
+  "ABSTS2MOD-SOUL_MONSTER_SHRINKER_BEETLE_SHRINK_POWER.description": "Attack damage dealt is reduced by [blue]{DamageDecrease}%[/blue].",
+  "ABSTS2MOD-SOUL_MONSTER_SHRINKER_BEETLE_SHRINK_POWER.smartDescription": "Attack damage dealt is reduced by [blue]{DamageDecrease}%[/blue]."
 }

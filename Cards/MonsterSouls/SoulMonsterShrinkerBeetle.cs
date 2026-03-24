@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using ABStS2Mod.Cards.Powers;
 using BaseLib.Abstracts;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
@@ -9,7 +10,6 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.CardPools;
-using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace ABStS2Mod.Cards.MonsterSouls;
 
@@ -20,7 +20,7 @@ public sealed class SoulMonsterShrinkerBeetle() : CustomCardModel(1, CardType.Sk
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
     {
-        HoverTipFactory.FromPower<ShrinkPower>()
+        HoverTipFactory.FromPower<SoulMonsterShrinkerBeetleShrinkPower>()
     };
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
@@ -28,7 +28,7 @@ public sealed class SoulMonsterShrinkerBeetle() : CustomCardModel(1, CardType.Sk
         ArgumentNullException.ThrowIfNull(CombatState);
         foreach (var enemy in CombatState.HittableEnemies)
         {
-            await PowerCmd.Apply<ShrinkPower>(enemy, -1m, Owner.Creature, this);
+            await PowerCmd.Apply<SoulMonsterShrinkerBeetleShrinkPower>(enemy, -1m, Owner.Creature, this);
         }
     }
 

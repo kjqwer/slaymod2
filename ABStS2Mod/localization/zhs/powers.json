@@ -124,5 +124,8 @@
   "ABSTS2MOD-SOUL_MONSTER_GLOBE_HEAD_CURRENT_POWER.smartDescription": "你的能力牌耗能减少 [blue]{Amount}[/blue]。每当你打出一张能力牌，对所有敌人造成 [blue]12[/blue] 点伤害。",
   "ABSTS2MOD-SOUL_MONSTER_OWL_MAGISTRATE_AEGIS_POWER.title": "鹰眼壁垒",
   "ABSTS2MOD-SOUL_MONSTER_OWL_MAGISTRATE_AEGIS_POWER.description": "受到攻击伤害降低 [blue]50%[/blue]。",
-  "ABSTS2MOD-SOUL_MONSTER_OWL_MAGISTRATE_AEGIS_POWER.smartDescription": "受到攻击伤害降低 [blue]{Amount}%[/blue]。"
+  "ABSTS2MOD-SOUL_MONSTER_OWL_MAGISTRATE_AEGIS_POWER.smartDescription": "受到攻击伤害降低 [blue]{Amount}%[/blue]。",
+  "ABSTS2MOD-SOUL_MONSTER_SHRINKER_BEETLE_SHRINK_POWER.title": "缩小",
+  "ABSTS2MOD-SOUL_MONSTER_SHRINKER_BEETLE_SHRINK_POWER.description": "攻击造成的伤害降低 [blue]{DamageDecrease}%[/blue]。",
+  "ABSTS2MOD-SOUL_MONSTER_SHRINKER_BEETLE_SHRINK_POWER.smartDescription": "攻击造成的伤害降低 [blue]{DamageDecrease}%[/blue]。"
 }
