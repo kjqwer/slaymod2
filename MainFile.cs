@@ -1,6 +1,9 @@
+using System.Reflection;
+using ABStS2Mod.Cards.MonsterSouls;
 using Godot;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Modding;
+using MegaCrit.Sts2.Core.Saves.Runs;
 
 namespace ABStS2Mod;
 
@@ -15,6 +18,7 @@ public partial class MainFile : Node
     {
         Harmony harmony = new(ModId);
 
-        harmony.PatchAll();
+        harmony.PatchAll(Assembly.GetExecutingAssembly());
+        SavedPropertiesTypeCache.InjectTypeIntoCache(typeof(SoulMonsterCorpseSlug));
     }
 }

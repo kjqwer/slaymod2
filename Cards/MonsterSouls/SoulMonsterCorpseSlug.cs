@@ -19,6 +19,8 @@ namespace ABStS2Mod.Cards.MonsterSouls;
 [Pool(typeof(ColorlessCardPool))]
 public sealed class SoulMonsterCorpseSlug() : CustomCardModel(1, CardType.Attack, CardRarity.Event, TargetType.AnyEnemy)
 {
+    private const int BaseDamage = 10;
+
     private int _currentDamage = 10;
 
     private int _increasedDamage;
@@ -43,6 +45,7 @@ public sealed class SoulMonsterCorpseSlug() : CustomCardModel(1, CardType.Attack
         {
             AssertMutable();
             _increasedDamage = value;
+            UpdateDamage();
         }
     }
 
@@ -56,18 +59,23 @@ public sealed class SoulMonsterCorpseSlug() : CustomCardModel(1, CardType.Attack
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         ArgumentNullException.ThrowIfNull(cardPlay.Target);
-        bool shouldTriggerFatal = cardPlay.Target.Powers.All(p => p.ShouldOwnerDeathTriggerFatal());
+        Creature target = cardPlay.Target;
+        bool shouldTriggerFatal = target.Powers.All(p => p.ShouldOwnerDeathTriggerFatal());
         AttackCommand attackResult = await DamageCmd.Attack(DynamicVars.Damage.BaseValue)
             .FromCard(this)
-            .Targeting(cardPlay.Target)
+            .Targeting(target)
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
-        if (shouldTriggerFatal && attackResult.Results.Any(r => r.WasTargetKilled))
+        bool wasTargetDefeated = target.IsDead || attackResult.Results.Any(r => r.WasTargetKilled && r.Receiver == target);
+        if (shouldTriggerFatal && wasTargetDefeated)
         {
             await CreatureCmd.GainMaxHp(Owner.Creature, DynamicVars.MaxHp.IntValue);
             int increase = DynamicVars["Increase"].IntValue;
             BuffFromFatal(increase);
-            (DeckVersion as SoulMonsterCorpseSlug)?.BuffFromFatal(increase);
+            if (DeckVersion is SoulMonsterCorpseSlug deckVersion && deckVersion != this)
+            {
+                deckVersion.BuffFromFatal(increase);
+            }
         }
     }
 
@@ -82,14 +90,18 @@ public sealed class SoulMonsterCorpseSlug() : CustomCardModel(1, CardType.Attack
         UpdateDamage();
     }
 
+    protected override void AfterDeserialized()
+    {
+        UpdateDamage();
+    }
+
     private void BuffFromFatal(int extraDamage)
     {
         IncreasedDamage += extraDamage;
-        UpdateDamage();
     }
 
     private void UpdateDamage()
     {
-        CurrentDamage = 10 + IncreasedDamage;
+        CurrentDamage = BaseDamage + IncreasedDamage;
     }
 }
