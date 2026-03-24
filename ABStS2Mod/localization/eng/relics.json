@@ -1,0 +1,8 @@
+{
+  "ABSTS2MOD-SOUL_CAPTURE_LANTERN.title": "Soulcapture Lantern",
+  "ABSTS2MOD-SOUL_CAPTURE_LANTERN.description": "At the start of each combat, add a temporary [gold]Soul Capture[/gold] to your [gold]draw pile[/gold].",
+  "ABSTS2MOD-SOUL_CAPTURE_LANTERN.flavor": "Its flame reflects souls that have only just scattered.",
+  "ABSTS2MOD-INNATE_SOUL_SEAL.title": "Innate Soul Seal",
+  "ABSTS2MOD-INNATE_SOUL_SEAL.description": "At the start of each combat, add a random monster card to your [gold]hand[/gold]. Its cost becomes [blue]0[/blue] this combat.",
+  "ABSTS2MOD-INNATE_SOUL_SEAL.flavor": "An old seal that calls the most useful soul at battle's first breath."
+}

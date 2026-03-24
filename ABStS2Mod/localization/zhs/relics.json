@@ -1,1 +1,8 @@
-{}
+{
+  "ABSTS2MOD-SOUL_CAPTURE_LANTERN.title": "缚魂灵灯",
+  "ABSTS2MOD-SOUL_CAPTURE_LANTERN.description": "在每场战斗开始时，将一张临时的[gold]灵魂捕获[/gold]加入你的[gold]抽牌堆[/gold]。",
+  "ABSTS2MOD-SOUL_CAPTURE_LANTERN.flavor": "灯焰中倒映着刚刚溃散的灵魂。",
+  "ABSTS2MOD-INNATE_SOUL_SEAL.title": "固印魂契",
+  "ABSTS2MOD-INNATE_SOUL_SEAL.description": "在每场战斗开始时，将一张随机怪物牌加入你的[gold]手牌[/gold]。该牌本场战斗中耗能变为[blue]0[/blue]。",
+  "ABSTS2MOD-INNATE_SOUL_SEAL.flavor": "古老契印会在战斗伊始唤来最顺手的灵魂。"
+}

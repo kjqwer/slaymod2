@@ -3,6 +3,7 @@ using System.Linq;
 using System.Reflection;
 using HarmonyLib;
 using ABStS2Mod.Cards.MonsterSouls;
+using ABStS2Mod.Relics;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Characters;
 using MegaCrit.Sts2.Core.Models.Cards;
@@ -20,8 +21,8 @@ public static class RegentStartingDeckPatch
         var newDeck = new List<CardModel>(__result);
         if (!newDeck.Any(card => card.Id == ModelDb.Card<SoulCapture>().Id))
         {
-//          newDeck.Add(ModelDb.Card<SoulCapture>());
-//          newDeck.Add(ModelDb.Card<SoulCapture>());
+            //          newDeck.Add(ModelDb.Card<SoulCapture>());
+            //          newDeck.Add(ModelDb.Card<SoulCapture>());
             // newDeck.Add(ModelDb.Card<SoulMonsterSlimedBerserker>());
             // newDeck.Add(ModelDb.Card<SoulMonsterOwlMagistrate>());
             // newDeck.Add(ModelDb.Card<SoulMonsterOwlMagistrate>());
@@ -41,5 +42,27 @@ public static class RegentStartingDeckPatch
         //     newDeck.Add(ModelDb.Card<SoulCaptureTest>());
         // }
         __result = newDeck;
+    }
+}
+
+[HarmonyPatch(typeof(Regent), nameof(Regent.StartingRelics), MethodType.Getter)]
+public static class RegentStartingRelicsPatch
+{
+    public static void Postfix(ref IEnumerable<RelicModel> __result)
+    {
+        var relics = new List<RelicModel>(__result);
+        var rareRelic = ModelDb.Relic<SoulCaptureLantern>();
+        if (!relics.Any(r => r.Id == rareRelic.Id))
+        {
+            // relics.Add(rareRelic);
+        }
+
+        var uncommonRelic = ModelDb.Relic<InnateSoulSeal>();
+        if (!relics.Any(r => r.Id == uncommonRelic.Id))
+        {
+            // relics.Add(uncommonRelic);
+        }
+
+        __result = relics;
     }
 }

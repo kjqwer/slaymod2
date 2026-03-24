@@ -73,12 +73,10 @@ public sealed class SoulCapture() : CustomCardModel(2, CardType.Attack, CardRari
             deckVersion = owner.Deck.Cards.FirstOrDefault((CardModel card) => card.Id == Id && card.IsUpgraded == IsUpgraded);
         }
 
-        if (deckVersion == null)
+        if (deckVersion != null)
         {
-            return;
+            await CardPileCmd.RemoveFromDeck(deckVersion, showPreview: true);
         }
-
-        await CardPileCmd.RemoveFromDeck(deckVersion, showPreview: true);
         if (Pile != null && Pile.IsCombatPile && !HasBeenRemovedFromState)
         {
             await CardCmd.Exhaust(choiceContext, this);
