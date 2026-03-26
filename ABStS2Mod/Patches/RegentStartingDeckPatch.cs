@@ -4,6 +4,7 @@ using System.Reflection;
 using HarmonyLib;
 using ABStS2Mod.Cards.MonsterSouls;
 using ABStS2Mod.Relics;
+using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Characters;
 using MegaCrit.Sts2.Core.Models.Cards;
@@ -21,8 +22,8 @@ public static class RegentStartingDeckPatch
         var newDeck = new List<CardModel>(__result);
         if (!newDeck.Any(card => card.Id == ModelDb.Card<SoulCapture>().Id))
         {
-            // newDeck.Add(ModelDb.Card<SoulCapture>());
-            // newDeck.Add(ModelDb.Card<SoulCapture>());
+            // newDeck.Add(ModelDb.Card<SoulMonsterSkulkingColony>());
+            // newDeck.Add(ModelDb.Card<SoulMonsterSkulkingColony>());
             // newDeck.Add(ModelDb.Card<SoulMonsterSlimedBerserker>());
             // newDeck.Add(ModelDb.Card<SoulMonsterAssassinRubyRaider>());
             // for (int i = 0; i < 2; i++)
@@ -43,6 +44,28 @@ public static class RegentStartingDeckPatch
         __result = newDeck;
     }
 }
+
+// [HarmonyPatch(typeof(Player), "PopulateStartingDeck")]
+// public static class RegentStartingDeckUpgradePatch
+// {
+//     public static void Postfix(Player __instance)
+//     {
+//         if (__instance.Character is not Regent)
+//         {
+//             return;
+//         }
+
+//         var targetCardId = ModelDb.Card<SoulMonsterSkulkingColony>().Id;
+//         var firstBaseCard = __instance.Deck.Cards.FirstOrDefault(card => card.Id == targetCardId && !card.IsUpgraded);
+//         if (firstBaseCard is null)
+//         {
+//             return;
+//         }
+
+//         firstBaseCard.UpgradeInternal();
+//         firstBaseCard.FinalizeUpgradeInternal();
+//     }
+// }
 
 [HarmonyPatch(typeof(Regent), nameof(Regent.StartingRelics), MethodType.Getter)]
 public static class RegentStartingRelicsPatch

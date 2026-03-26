@@ -18,7 +18,7 @@ public sealed class SoulMonsterSkulkingColony() : CustomCardModel(2, CardType.Po
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
-        new PowerVar<HardenedShellPower>(20m)
+        new PowerVar<HardenedShellPower>(8m)
     };
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
@@ -33,6 +33,6 @@ public sealed class SoulMonsterSkulkingColony() : CustomCardModel(2, CardType.Po
 
     protected override void OnUpgrade()
     {
-        DynamicVars["HardenedShellPower"].UpgradeValueBy(-5m);
+        DynamicVars["HardenedShellPower"].UpgradeValueBy(-3m);
     }
 }

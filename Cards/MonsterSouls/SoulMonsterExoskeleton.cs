@@ -17,7 +17,7 @@ public sealed class SoulMonsterExoskeleton() : CustomCardModel(2, CardType.Power
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
-        new PowerVar<SoulMonsterExoskeletonHardToKillPower>(20m)
+        new PowerVar<SoulMonsterExoskeletonHardToKillPower>(15m)
     };
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
