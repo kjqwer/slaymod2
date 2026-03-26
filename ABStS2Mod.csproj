@@ -79,6 +79,7 @@
     <ItemGroup>
         <PackageReference Include="Alchyr.Sts2.BaseLib" Version="0.1.6" PrivateAssets="All" />
         <PackageReference Include="Alchyr.Sts2.ModAnalyzers" Version="*" />
+        <PackageReference Include="System.IO.Hashing" Version="9.0.0" />
         <AdditionalFiles Include="ABStS2Mod/localization/**/*.json"/>
     </ItemGroup>
 
