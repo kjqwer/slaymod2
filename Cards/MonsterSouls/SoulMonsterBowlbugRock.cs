@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 namespace ABStS2Mod.Cards.MonsterSouls;
 
 [Pool(typeof(ColorlessCardPool))]
-public sealed class SoulMonsterBowlbugRock() : CustomCardModel(2, CardType.Skill, CardRarity.Event, TargetType.Self)
+public sealed class SoulMonsterBowlbugRock() : CustomCardModel(1, CardType.Skill, CardRarity.Event, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {

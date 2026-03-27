@@ -22,20 +22,21 @@ public static class RegentStartingDeckPatch
         var newDeck = new List<CardModel>(__result);
         if (!newDeck.Any(card => card.Id == ModelDb.Card<SoulCapture>().Id))
         {
-            // newDeck.Add(ModelDb.Card<SoulMonsterSkulkingColony>());
-            // newDeck.Add(ModelDb.Card<SoulMonsterSkulkingColony>());
-            // newDeck.Add(ModelDb.Card<SoulMonsterSlimedBerserker>());
-            // newDeck.Add(ModelDb.Card<SoulMonsterAssassinRubyRaider>());
-            // for (int i = 0; i < 2; i++)
-            // {
-            //     int strikeIndex = newDeck.FindIndex(card => card.Id.Entry == RegentStrikeId);
-            //     if (strikeIndex < 0)
-            //     {
-            //         break;
-            //     }
+            // newDeck.Add(ModelDb.Card<SoulMonsterPunchConstruct>());
+            // newDeck.Add(ModelDb.Card<SoulMonsterRocket>());
+            // newDeck.Add(ModelDb.Card<SoulMonsterSeapunk>());
+            // newDeck.Add(ModelDb.Card<SoulMonsterTerrorEel>());
+            // newDeck.Add(ModelDb.Card<SoulMonsterTunneler>());
+            for (int i = 0; i < 2; i++)
+            {
+                int strikeIndex = newDeck.FindIndex(card => card.Id.Entry == RegentStrikeId);
+                if (strikeIndex < 0)
+                {
+                    break;
+                }
 
-            //     newDeck.RemoveAt(strikeIndex);
-            // }
+                newDeck.RemoveAt(strikeIndex);
+            }
         }
         // if (!newDeck.Any(card => card.Id == ModelDb.Card<SoulCaptureTest>().Id))
         // {

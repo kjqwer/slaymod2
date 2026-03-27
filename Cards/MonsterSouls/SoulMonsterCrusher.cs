@@ -8,6 +8,7 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
 
 namespace ABStS2Mod.Cards.MonsterSouls;
@@ -29,6 +30,11 @@ public sealed class SoulMonsterCrusher() : CustomCardModel(2, CardType.Skill, Ca
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
+        int drawCount = 10 - PileType.Hand.GetPile(Owner).Cards.Count;
+        if (drawCount > 0)
+        {
+            await CardPileCmd.Draw(choiceContext, drawCount, Owner);
+        }
         await PowerCmd.Apply<SoulMonsterCrusherPower>(Owner.Creature, DynamicVars["SoulMonsterCrusherPower"].BaseValue, Owner.Creature, this);
     }
 

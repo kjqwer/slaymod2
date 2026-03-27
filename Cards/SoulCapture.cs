@@ -70,7 +70,7 @@ public sealed class SoulCapture() : CustomCardModel(2, CardType.Attack, CardRari
         CardModel? deckVersion = DeckVersion;
         if (deckVersion == null)
         {
-            deckVersion = owner.Deck.Cards.FirstOrDefault((CardModel card) => card.Id == Id && card.IsUpgraded == IsUpgraded);
+            deckVersion = owner.Deck.Cards.FirstOrDefault((CardModel card) => card.Id == Id && card.CurrentUpgradeLevel == CurrentUpgradeLevel);
         }
 
         if (deckVersion != null)
@@ -86,14 +86,8 @@ public sealed class SoulCapture() : CustomCardModel(2, CardType.Attack, CardRari
         {
             CardModel monsterRewardCard = MonsterSoulCardRegistry.Create(owner, defeatedMonsterId);
             CardModel soulCaptureRewardCard = owner.RunState.CreateCard<SoulCapture>(owner);
-            if (IsUpgraded && monsterRewardCard.IsUpgradable)
-            {
-                CardCmd.Upgrade(monsterRewardCard, CardPreviewStyle.None);
-            }
-            if (IsUpgraded && soulCaptureRewardCard.IsUpgradable)
-            {
-                CardCmd.Upgrade(soulCaptureRewardCard, CardPreviewStyle.None);
-            }
+            ApplyUpgradeLevel(this, monsterRewardCard);
+            ApplyUpgradeLevel(this, soulCaptureRewardCard);
             CardCreationOptions rewardOptions = new CardCreationOptions(
                 new CardPoolModel[] { ModelDb.CardPool<ColorlessCardPool>() },
                 CardCreationSource.Other,
@@ -101,6 +95,15 @@ public sealed class SoulCapture() : CustomCardModel(2, CardType.Attack, CardRari
             CardReward reward = new CardReward(rewardOptions, 2, owner);
             ForceRewardCards(reward, monsterRewardCard, soulCaptureRewardCard);
             combatRoom.AddExtraReward(owner, reward);
+        }
+    }
+
+    private static void ApplyUpgradeLevel(CardModel source, CardModel target)
+    {
+        for (int i = 0; i < source.CurrentUpgradeLevel && target.IsUpgradable; i++)
+        {
+            target.UpgradeInternal();
+            target.FinalizeUpgradeInternal();
         }
     }
 

@@ -15,7 +15,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace ABStS2Mod.Cards.MonsterSouls;
 
 [Pool(typeof(ColorlessCardPool))]
-public sealed class SoulMonsterBowlbugNectar() : CustomCardModel(2, CardType.Attack, CardRarity.Event, TargetType.AnyEnemy)
+public sealed class SoulMonsterBowlbugNectar() : CustomCardModel(0, CardType.Attack, CardRarity.Event, TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {

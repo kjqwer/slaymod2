@@ -17,23 +17,31 @@ public sealed class SoulMonsterTunneler() : CustomCardModel(2, CardType.Attack, 
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
-        new DamageVar(15m, ValueProp.Move),
-        new DynamicVar("BlockDamage", 30m)
+        new DamageVar(18m, ValueProp.Move),
+        new DynamicVar("BlockDamage", 36m),
+        new DynamicVar("Cards", 1m)
     };
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         ArgumentNullException.ThrowIfNull(cardPlay.Target);
-        decimal damage = Owner.Creature.Block > 0 ? DynamicVars["BlockDamage"].BaseValue : DynamicVars.Damage.BaseValue;
+        bool hadBlock = Owner.Creature.Block > 0;
+        decimal damage = hadBlock ? DynamicVars["BlockDamage"].BaseValue : DynamicVars.Damage.BaseValue;
         await DamageCmd.Attack(damage)
             .FromCard(this)
             .Targeting(cardPlay.Target)
             .WithHitFx("vfx/vfx_attack_blunt")
             .Execute(choiceContext);
+        if (hadBlock)
+        {
+            await CardPileCmd.Draw(choiceContext, DynamicVars["Cards"].BaseValue, Owner);
+        }
     }
 
     protected override void OnUpgrade()
     {
         EnergyCost.UpgradeBy(-1);
+        DynamicVars.Damage.UpgradeValueBy(3m);
+        DynamicVars["BlockDamage"].UpgradeValueBy(6m);
     }
 }

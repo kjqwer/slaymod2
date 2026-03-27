@@ -17,7 +17,7 @@ public sealed class SoulMonsterDevotedSculptor() : CustomCardModel(1, CardType.P
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
-        new PowerVar<RitualPower>(6m)
+        new PowerVar<RitualPower>(3m)
     };
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
@@ -33,6 +33,6 @@ public sealed class SoulMonsterDevotedSculptor() : CustomCardModel(1, CardType.P
 
     protected override void OnUpgrade()
     {
-        DynamicVars["RitualPower"].UpgradeValueBy(2m);
+        DynamicVars["RitualPower"].UpgradeValueBy(1m);
     }
 }

@@ -16,7 +16,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace ABStS2Mod.Cards.MonsterSouls;
 
 [Pool(typeof(ColorlessCardPool))]
-public sealed class SoulMonsterKnowledgeDemon() : CustomCardModel(3, CardType.Skill, CardRarity.Event, TargetType.AllEnemies)
+public sealed class SoulMonsterKnowledgeDemon() : CustomCardModel(2, CardType.Skill, CardRarity.Event, TargetType.AllEnemies)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {

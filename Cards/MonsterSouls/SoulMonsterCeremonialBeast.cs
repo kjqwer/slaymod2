@@ -14,8 +14,13 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 namespace ABStS2Mod.Cards.MonsterSouls;
 
 [Pool(typeof(ColorlessCardPool))]
-public sealed class SoulMonsterCeremonialBeast() : CustomCardModel(1, CardType.Skill, CardRarity.Event, TargetType.AnyEnemy)
+public sealed class SoulMonsterCeremonialBeast() : CustomCardModel(3, CardType.Skill, CardRarity.Event, TargetType.AnyEnemy)
 {
+    public override IEnumerable<CardKeyword> CanonicalKeywords => new CardKeyword[]
+    {
+        CardKeyword.Ethereal
+    };
+
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
     {
         StunIntent.GetStaticHoverTip()

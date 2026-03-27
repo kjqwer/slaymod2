@@ -15,7 +15,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 namespace ABStS2Mod.Cards.MonsterSouls;
 
 [Pool(typeof(ColorlessCardPool))]
-public sealed class SoulMonsterTerrorEel() : CustomCardModel(2, CardType.Power, CardRarity.Event, TargetType.Self)
+public sealed class SoulMonsterTerrorEel() : CustomCardModel(1, CardType.Power, CardRarity.Event, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {

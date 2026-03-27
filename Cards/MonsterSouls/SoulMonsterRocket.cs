@@ -33,6 +33,12 @@ public sealed class SoulMonsterRocket() : CustomCardModel(2, CardType.Skill, Car
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
+        int drawCount = 10 - PileType.Hand.GetPile(Owner).Cards.Count;
+        if (drawCount > 0)
+        {
+            await CardPileCmd.Draw(choiceContext, drawCount, Owner);
+        }
+
         await PowerCmd.Apply<SoulMonsterRocketPower>(Owner.Creature, DynamicVars["SoulMonsterRocketPower"].BaseValue, Owner.Creature, this);
 
         foreach (CardModel card in PileType.Hand.GetPile(Owner).Cards.Where(card => card.Type == CardType.Skill))

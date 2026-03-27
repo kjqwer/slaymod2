@@ -17,7 +17,7 @@ public sealed class SoulMonsterSeapunk() : CustomCardModel(1, CardType.Attack, C
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
-        new DamageVar(4m, ValueProp.Move),
+        new DamageVar(6m, ValueProp.Move),
         new DynamicVar("Times", 2m),
         new CardsVar(1)
     };

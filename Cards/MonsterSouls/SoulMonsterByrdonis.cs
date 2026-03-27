@@ -16,8 +16,8 @@ public sealed class SoulMonsterByrdonis() : CustomCardModel(1, CardType.Attack, 
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
-        new DamageVar(4m, ValueProp.Move),
-        new DynamicVar("Times", 3m)
+        new DamageVar(5m, ValueProp.Move),
+        new DynamicVar("Times", 4m)
     };
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
@@ -40,6 +40,6 @@ public sealed class SoulMonsterByrdonis() : CustomCardModel(1, CardType.Attack, 
 
     protected override void OnUpgrade()
     {
-        DynamicVars["Times"].UpgradeValueBy(2m);
+        DynamicVars["Times"].UpgradeValueBy(1m);
     }
 }
