@@ -22,20 +22,20 @@ public static class RegentStartingDeckPatch
         var newDeck = new List<CardModel>(__result);
         if (!newDeck.Any(card => card.Id == ModelDb.Card<SoulCapture>().Id))
         {
-            newDeck.Add(ModelDb.Card<DeadlyPoison>());
-            newDeck.Add(ModelDb.Card<SoulMonsterBowlbugSilkToxinWeaver>());
+            // newDeck.Add(ModelDb.Card<SoulCapture>());
+            // newDeck.Add(ModelDb.Card<SoulCapture>());
             // newDeck.Add(ModelDb.Card<SoulMonsterTerrorEel>());
             // newDeck.Add(ModelDb.Card<SoulMonsterTunneler>());
-            for (int i = 0; i < 2; i++)
-            {
-                int strikeIndex = newDeck.FindIndex(card => card.Id.Entry == RegentStrikeId);
-                if (strikeIndex < 0)
-                {
-                    break;
-                }
+            // for (int i = 0; i < 2; i++)
+            // {
+            //     int strikeIndex = newDeck.FindIndex(card => card.Id.Entry == RegentStrikeId);
+            //     if (strikeIndex < 0)
+            //     {
+            //         break;
+            //     }
 
-                newDeck.RemoveAt(strikeIndex);
-            }
+            //     newDeck.RemoveAt(strikeIndex);
+            // }
         }
         // if (!newDeck.Any(card => card.Id == ModelDb.Card<SoulCaptureTest>().Id))
         // {
@@ -55,7 +55,7 @@ public static class RegentStartingDeckPatch
 //             return;
 //         }
 
-//         var targetCardId = ModelDb.Card<SoulMonsterSkulkingColony>().Id;
+//         var targetCardId = ModelDb.Card<SoulCapture>().Id;
 //         var firstBaseCard = __instance.Deck.Cards.FirstOrDefault(card => card.Id == targetCardId && !card.IsUpgraded);
 //         if (firstBaseCard is null)
 //         {
