@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using ABStS2Mod.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -7,9 +10,81 @@ namespace ABStS2Mod.Cards.MonsterSouls;
 
 public static class MonsterSoulCardRegistry
 {
+    private const decimal DefaultWeight = 1m;
+    private const decimal WeightScale = 10m;
+
+    private sealed record SoulDropOption(Func<Player, CardModel> Factory, decimal Weight);
+
+    private static readonly Dictionary<string, SoulDropOption[]> VariantOptions = new(StringComparer.Ordinal)
+    {
+        ["TOADPOLE"] =
+        [
+            new SoulDropOption(owner => owner.RunState.CreateCard<SoulMonsterToadpole>(owner), DefaultWeight),
+            new SoulDropOption(owner => owner.RunState.CreateCard<SoulMonsterToadpoleSpined>(owner), 0.35m),
+            new SoulDropOption(owner => owner.RunState.CreateCard<SoulMonsterToadpoleRoyal>(owner), 0.2m)
+        ]
+    };
+
     public static CardModel Create(Player owner, string monsterId)
     {
-        string normalizedId = monsterId.StartsWith("MONSTER.") ? monsterId["MONSTER.".Length..] : monsterId;
+        return CreateRewardCards(owner, monsterId).First();
+    }
+
+    public static IReadOnlyList<CardModel> CreateRewardCards(Player owner, string monsterId)
+    {
+        string normalizedId = NormalizeMonsterId(monsterId);
+        SoulDropOption[] options = VariantOptions.TryGetValue(normalizedId, out SoulDropOption[]? configuredOptions)
+            ? configuredOptions
+            : [new SoulDropOption(player => CreateSingle(player, normalizedId), DefaultWeight)];
+        int rewardCount = RollRewardCount(owner, options.Length);
+        List<CardModel> rewards = new List<CardModel>(rewardCount);
+        List<SoulDropOption> pool = options.ToList();
+        for (int i = 0; i < rewardCount && pool.Count > 0; i++)
+        {
+            SoulDropOption chosen = RollWeighted(owner, pool);
+            rewards.Add(chosen.Factory(owner));
+            pool.Remove(chosen);
+        }
+        return rewards;
+    }
+
+    private static int RollRewardCount(Player owner, int maxOptions)
+    {
+        if (maxOptions <= 1)
+        {
+            return 1;
+        }
+        if (maxOptions == 2)
+        {
+            return owner.RunState.Rng.CombatCardGeneration.NextItem([1, 1, 1, 2]);
+        }
+
+        int rolled = owner.RunState.Rng.CombatCardGeneration.NextItem([1, 1, 1, 1, 2, 2, 2, 3]);
+        return Math.Min(rolled, maxOptions);
+    }
+
+    private static SoulDropOption RollWeighted(Player owner, List<SoulDropOption> options)
+    {
+        List<SoulDropOption> weightedPool = new List<SoulDropOption>();
+        foreach (SoulDropOption option in options)
+        {
+            int copies = Math.Max(1, (int)Math.Round(option.Weight * WeightScale, MidpointRounding.AwayFromZero));
+            for (int i = 0; i < copies; i++)
+            {
+                weightedPool.Add(option);
+            }
+        }
+
+        return owner.RunState.Rng.CombatCardGeneration.NextItem(weightedPool) ?? options[0];
+    }
+
+    private static string NormalizeMonsterId(string monsterId)
+    {
+        return monsterId.StartsWith("MONSTER.") ? monsterId["MONSTER.".Length..] : monsterId;
+    }
+
+    private static CardModel CreateSingle(Player owner, string normalizedId)
+    {
         return normalizedId switch
         {
             "ARCHITECT" => owner.RunState.CreateCard<SoulMonsterArchitect>(owner),

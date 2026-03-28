@@ -84,16 +84,20 @@ public sealed class SoulCapture() : CustomCardModel(2, CardType.Attack, CardRari
 
         if (combatRoom != null)
         {
-            CardModel monsterRewardCard = MonsterSoulCardRegistry.Create(owner, defeatedMonsterId);
             CardModel soulCaptureRewardCard = owner.RunState.CreateCard<SoulCapture>(owner);
-            ApplyUpgradeLevel(this, monsterRewardCard);
+            List<CardModel> rewardCards = MonsterSoulCardRegistry.CreateRewardCards(owner, defeatedMonsterId).ToList();
+            foreach (CardModel monsterRewardCard in rewardCards)
+            {
+                ApplyUpgradeLevel(this, monsterRewardCard);
+            }
             ApplyUpgradeLevel(this, soulCaptureRewardCard);
+            rewardCards.Add(soulCaptureRewardCard);
             CardCreationOptions rewardOptions = new CardCreationOptions(
                 new CardPoolModel[] { ModelDb.CardPool<ColorlessCardPool>() },
                 CardCreationSource.Other,
                 CardRarityOddsType.Uniform);
-            CardReward reward = new CardReward(rewardOptions, 2, owner);
-            ForceRewardCards(reward, monsterRewardCard, soulCaptureRewardCard);
+            CardReward reward = new CardReward(rewardOptions, rewardCards.Count, owner);
+            ForceRewardCards(reward, rewardCards.ToArray());
             combatRoom.AddExtraReward(owner, reward);
         }
     }
