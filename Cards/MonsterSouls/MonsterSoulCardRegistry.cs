@@ -17,6 +17,12 @@ public static class MonsterSoulCardRegistry
 
     private static readonly Dictionary<string, SoulDropOption[]> VariantOptions = new(StringComparer.Ordinal)
     {
+        ["ASSASSIN_RUBY_RAIDER"] =
+        [
+            new SoulDropOption(owner => owner.RunState.CreateCard<SoulMonsterAssassinRubyRaider>(owner), DefaultWeight),
+            new SoulDropOption(owner => owner.RunState.CreateCard<SoulMonsterAssassinRubyRaiderBloodVeil>(owner), 0.45m),
+            new SoulDropOption(owner => owner.RunState.CreateCard<SoulMonsterAssassinRubyRaiderShadowSupply>(owner), 0.55m)
+        ],
         ["TOADPOLE"] =
         [
             new SoulDropOption(owner => owner.RunState.CreateCard<SoulMonsterToadpole>(owner), DefaultWeight),

@@ -118,7 +118,26 @@
 - 升级数值差异：
   - 多张怪物魂卡使用 `{Xxx:diff()}`（如 `{Block:diff()}`、`{Damage:diff()}`）
 
-## 8. 新增卡牌本地化检查清单（提交前）
+## 8. 摄魂奖励卡片检索逻辑（新增分支必看）
+
+摄魂击杀的怪物魂奖励来自：
+
+- `Cards/SoulCapture.cs`
+  - 入口调用：`MonsterSoulCardRegistry.CreateRewardCards(owner, defeatedMonsterId)`
+- `Cards/MonsterSouls/MonsterSoulCardRegistry.cs`
+  - 先用 `NormalizeMonsterId` 处理 `MONSTER.` 前缀
+  - 再按 `VariantOptions` 查“同一怪物的多分支卡”
+  - 若没配置分支，回退到 `CreateSingle` 的单卡映射
+
+新增“同怪物不同分支”时，必须做两件事：
+
+1. 新卡类名/ID 与本地化键一致（`ABSTS2MOD-SOUL_MONSTER_...`）  
+2. 在 `VariantOptions` 给对应怪物 ID 增加多个 `SoulDropOption`  
+   （否则摄魂只会走 `CreateSingle`，拿不到你新增的分支卡）
+
+`CreateRewardCards` 会根据分支数自动决定掉落数量（1~3）并按权重抽取，所以只要接入 `VariantOptions`，新分支就会被摄魂正常识别。
+
+## 9. 新增卡牌本地化检查清单（提交前）
 
 1. zhs/eng 两个 `cards.json` 都已加 `title + description`
 2. 键名与卡牌真实 ID 一致（尤其大小写与下划线）
