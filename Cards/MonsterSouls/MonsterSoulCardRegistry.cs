@@ -39,6 +39,16 @@ public static class MonsterSoulCardRegistry
             new SoulDropOption(owner => owner.RunState.CreateCard<SoulMonsterBowlbugNectar>(owner), DefaultWeight),
             new SoulDropOption(owner => owner.RunState.CreateCard<SoulMonsterBowlbugNectarBloodGift>(owner), 0.5m)
         ],
+        ["BOWLBUG_ROCK"] =
+        [
+            new SoulDropOption(owner => owner.RunState.CreateCard<SoulMonsterBowlbugRock>(owner), DefaultWeight),
+            new SoulDropOption(owner => owner.RunState.CreateCard<SoulMonsterBowlbugRockLifeCore>(owner), 0.35m)
+        ],
+        ["BOWLBUG_SILK"] =
+        [
+            new SoulDropOption(owner => owner.RunState.CreateCard<SoulMonsterBowlbugSilk>(owner), DefaultWeight),
+            new SoulDropOption(owner => owner.RunState.CreateCard<SoulMonsterBowlbugSilkToxinWeaver>(owner), 0.35m)
+        ],
         ["TOADPOLE"] =
         [
             new SoulDropOption(owner => owner.RunState.CreateCard<SoulMonsterToadpole>(owner), DefaultWeight),
