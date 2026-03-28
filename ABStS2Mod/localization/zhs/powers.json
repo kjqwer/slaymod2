@@ -141,6 +141,6 @@
   "ABSTS2MOD-SOUL_MONSTER_OWL_MAGISTRATE_AEGIS_POWER.description": "受到攻击伤害降低 [blue]50%[/blue]。",
   "ABSTS2MOD-SOUL_MONSTER_OWL_MAGISTRATE_AEGIS_POWER.smartDescription": "受到攻击伤害降低 [blue]{Amount}%[/blue]。",
   "ABSTS2MOD-SOUL_MONSTER_SHRINKER_BEETLE_SHRINK_POWER.title": "缩小",
-  "ABSTS2MOD-SOUL_MONSTER_SHRINKER_BEETLE_SHRINK_POWER.description": "攻击造成的伤害降低 [blue]{DamageDecrease}%[/blue]。",
-  "ABSTS2MOD-SOUL_MONSTER_SHRINKER_BEETLE_SHRINK_POWER.smartDescription": "攻击造成的伤害降低 [blue]{DamageDecrease}%[/blue]。"
+  "ABSTS2MOD-SOUL_MONSTER_SHRINKER_BEETLE_SHRINK_POWER.description": "攻击造成的伤害降低 [blue]30%[/blue]。",
+  "ABSTS2MOD-SOUL_MONSTER_SHRINKER_BEETLE_SHRINK_POWER.smartDescription": "攻击造成的伤害降低 [blue]30%[/blue]。"
 }
