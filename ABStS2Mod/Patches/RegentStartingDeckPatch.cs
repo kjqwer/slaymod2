@@ -22,8 +22,8 @@ public static class RegentStartingDeckPatch
         var newDeck = new List<CardModel>(__result);
         if (!newDeck.Any(card => card.Id == ModelDb.Card<SoulCapture>().Id))
         {
-            newDeck.Add(ModelDb.Card<SoulMonsterAxeRubyRaiderExecutionMark>());
-            newDeck.Add(ModelDb.Card<SoulMonsterAxeRubyRaiderHuntDrum>());
+            newDeck.Add(ModelDb.Card<SoulMonsterBowlbugEggBroodCall>());
+            newDeck.Add(ModelDb.Card<SoulMonsterBowlbugNectarBloodGift>());
             // newDeck.Add(ModelDb.Card<SoulMonsterTerrorEel>());
             // newDeck.Add(ModelDb.Card<SoulMonsterTunneler>());
             for (int i = 0; i < 2; i++)
