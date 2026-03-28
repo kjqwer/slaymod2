@@ -23,6 +23,12 @@ public static class MonsterSoulCardRegistry
             new SoulDropOption(owner => owner.RunState.CreateCard<SoulMonsterAssassinRubyRaiderBloodVeil>(owner), 0.45m),
             new SoulDropOption(owner => owner.RunState.CreateCard<SoulMonsterAssassinRubyRaiderShadowSupply>(owner), 0.55m)
         ],
+        ["AXE_RUBY_RAIDER"] =
+        [
+            new SoulDropOption(owner => owner.RunState.CreateCard<SoulMonsterAxeRubyRaider>(owner), DefaultWeight),
+            new SoulDropOption(owner => owner.RunState.CreateCard<SoulMonsterAxeRubyRaiderHuntDrum>(owner), 0.55m),
+            new SoulDropOption(owner => owner.RunState.CreateCard<SoulMonsterAxeRubyRaiderExecutionMark>(owner), 0.45m)
+        ],
         ["TOADPOLE"] =
         [
             new SoulDropOption(owner => owner.RunState.CreateCard<SoulMonsterToadpole>(owner), DefaultWeight),
